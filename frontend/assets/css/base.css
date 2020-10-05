@@ -20,6 +20,9 @@ body {
 .nav-background-white {
     background-color: var(--main-bg-color);
 }
+.text-color-white {
+    color: var(--main-bg-color);
+}
 
 .nav-fontawesome {
     font-size: 1.3rem;
