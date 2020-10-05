@@ -1,6 +1,35 @@
-:root (
+:root {
     --main-color: #82845d;
     --main-color2: #b5b47b;
     --main-bg-color: #ffffff;   
     --btn-color: #ff6c00;
-)
+    --lightgrey-color: #cccccc;
+    --lightgrey2-color: #e1e1e1;
+    --lightgrey3-color: #f2f3ee;
+    --dark-color: #000000;
+}
+
+body {
+    
+}
+
+.nav-brand-title {
+    font-size: 1.8rem;
+}
+
+.nav-background-white {
+    background-color: var(--main-bg-color);
+}
+
+.nav-fontawesome {
+    font-size: 1.3rem;
+    color: var(--main-color);
+}
+.nav-clear-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.main-color {
+    background-color: var(--main-color);
+}
