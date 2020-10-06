@@ -9,6 +9,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <link rel="stylesheet" href="/frontend/assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
         integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
@@ -62,7 +63,6 @@
 
 
     <main>
-
         <!--Carousel de apresentação do website-->
         <section>
             <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
@@ -91,13 +91,13 @@
         <section class="container mt-5 mb-5">
             <h3>MAIS VENDIDOS:</h3>
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
+                <!-- <ol class="carousel-indicators text-btn-color">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
+                </ol> -->
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-interval="10000">
                         <div class="card-deck">
                             <div class="card">
                                 <img class="card-img-top" src="./assets/images/image1.jpg" alt="Card image cap">
@@ -106,6 +106,7 @@
                                     <p class="card-text">This is a longer card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <button type="button" class="btn text-btn-color">Primary</button>
                                 </div>
                             </div>
                             <div class="card">
@@ -115,6 +116,7 @@
                                     <p class="card-text">This card has supporting text below as a natural lead-in to
                                         additional content.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <button type="button" class="btn text-btn-color">Primary</button>
                                 </div>
                             </div>
                             <div class="card">
@@ -125,11 +127,12 @@
                                         lead-in to additional content. This card has even longer content than the first
                                         to show that equal height action.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <button type="button" class="btn text-btn-color">Primary</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-interval="10000">
                         <div class="card-deck">
                             <div class="card">
                                 <img class="card-img-top" src="./assets/images/image1.jpg" alt="Card image cap">
@@ -138,6 +141,7 @@
                                     <p class="card-text">This is a longer card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <button type="button" class="btn text-btn-color">Primary</button>
                                 </div>
                             </div>
                             <div class="card">
@@ -147,6 +151,7 @@
                                     <p class="card-text">This card has supporting text below as a natural lead-in to
                                         additional content.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <button type="button" class="btn text-btn-color">Primary</button>
                                 </div>
                             </div>
                             <div class="card">
@@ -157,11 +162,12 @@
                                         lead-in to additional content. This card has even longer content than the first
                                         to show that equal height action.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <button type="button" class="btn text-btn-color">Primary</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-interval="10000">
                         <div class="card-deck">
                             <div class="card">
                                 <img class="card-img-top" src="./assets/images/image1.jpg" alt="Card image cap">
@@ -170,6 +176,7 @@
                                     <p class="card-text">This is a longer card with supporting text below as a natural
                                         lead-in to additional content. This content is a little bit longer.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <button type="button" class="btn text-btn-color">Primary</button>
                                 </div>
                             </div>
                             <div class="card">
@@ -179,6 +186,7 @@
                                     <p class="card-text">This card has supporting text below as a natural lead-in to
                                         additional content.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <button type="button" class="btn text-btn-color">Primary</button>
                                 </div>
                             </div>
                             <div class="card">
@@ -189,19 +197,20 @@
                                         lead-in to additional content. This card has even longer content than the first
                                         to show that equal height action.</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                    <button type="button" class="btn text-btn-color">Primary</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <!-- <a class="carousel-control-prev text-btn-color" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a class="carousel-control-next text-btn-color" href="#carouselExampleIndicators" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
-                </a>
+                </a> -->
             </div>
         </section>
 
@@ -215,6 +224,88 @@
             </div>
         </section>
     </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4 background-main-color">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>Here you can use rows and columns to organize your footer content.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Institucional</a>
+                        </li>
+                        <li>
+                            <a href="#!">Atendimento</a>
+                        </li>
+                        <li>
+                            <a href="#!">Dúvidas Frequentes</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Institucional</a>
+                        </li>
+                        <li>
+                            <a href="#!">Atendimento</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">Todos os Direitos Reservados Orgâni.co &copy; 2020</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 
     <!--BootstrapCDN-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
