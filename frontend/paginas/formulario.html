@@ -55,10 +55,41 @@
             </div>
 
             <div>
-                <a href="" class="pr-3 nav-clear-link"><i class="fas fa-cart-plus nav-fontawesome pr-2"></i></a>
-                <a href="" class="pr-3 nav-clear-link"><i class="fas fa-user nav-fontawesome pr-2"></i></a>
+                <a href="" class="pr-3 nav-clear-link"><i class="fas fa-cart-plus nav-fontawesome-icon pr-2"></i></a>
+
+                <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-link"><i
+                        class="fas fa-user nav-fontawesome-icon"></i></button>
             </div>
         </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Faça seu Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="login-email">E-mail</label>
+                            <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="login-senha">Password</label>
+                            <input type="password" class="form-control" id="login-senha">
+                        </div>
+                        <a role="button" class="btn btn-link">Esqueci minha senha!</a>
+                        <a href="./paginas/formulario.html" role="button" class="btn btn-link">Cadastre-se</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+                        <button type="button" class="btn btn-outline-success">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
 

@@ -9,6 +9,10 @@
     --dark-color: #000000;
 }
 
+.h-300 {
+    height: 300px;
+}
+
 
 .carousel-indicators {
     bottom: -40px;
@@ -39,9 +43,10 @@
     color: var(--main-bg-color);
 }
 
-.nav-fontawesome {
+.nav-fontawesome-icon {
     font-size: 1.3rem;
     color: var(--main-color);
+    
 }
 .nav-clear-link {
     text-decoration: none;
