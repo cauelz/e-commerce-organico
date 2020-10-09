@@ -1,4 +1,4 @@
-document.querySelectorAll('a').forEach(link => {
+document.querySelectorAll('[user-data]').forEach(link => {
     const conteudo = document.getElementById('user-content');
 
     link.onclick = function(e) {

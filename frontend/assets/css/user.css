@@ -14,11 +14,21 @@
 }
 
 .header-bg-color {
-    background-color: var(--main-color);
+    background-color: var(--main-color2);
 }
+
+.orange-text-color {
+    color: var(--btn-color);
+}
+
+
 
 .avatar-size4 {
     font-size: var(--font-size4);
+}
+
+.nav-height {
+    min-height: calc(100vh - 224px) ;
 }
 
 .white-background-color {
