@@ -39,3 +39,14 @@ a {
     max-width: 400px;
     object-fit: cover;
 }
+
+.botoes {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.descricao {
+    padding-left: 100px;
+    padding-right: 100px;
+}
