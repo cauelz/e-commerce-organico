@@ -21,7 +21,18 @@
     padding: 0px 30px;
 }
 
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
 
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+ }
 
 .btn-primary {
     background-color: #f74a54;
