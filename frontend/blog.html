@@ -27,25 +27,38 @@
             </button>
             <a href="#" class="navbar-brand nav-brand-title">orgâni.co</a>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse mx-3" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="./index.html">Início</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Quem Somo</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
+                            Produtos
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Frutas</a>
+                            <a class="dropdown-item" href="#">Verduras</a>
+                            <a class="dropdown-item" href="#">Legumes</a>
+                            <a class="dropdown-item" href="#">Carnes</a>
+                            <a class="dropdown-item" href="#">Temperos e Chás</a>
+                            <a class="dropdown-item" href="#">Laticínios</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/frontend/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dúvidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0 pr-4">
@@ -55,11 +68,21 @@
                 </form>
             </div>
 
-            <div>
-                <a href="" class="pr-3 nav-clear-link"><i class="fas fa-cart-plus nav-fontawesome-icon pr-2"></i></a>
-
-                <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-link"><i
-                        class="fas fa-user nav-fontawesome-icon"></i></button>
+            <div class="d-flex">
+                <div class="mx-2 text-center">
+                    <a href="" class="btn btn-outline-light btn-lg" role="button" aria-pressed="true" data-toggle="modal" data-target="#exampleModal" ><i
+                            class="far fa-comments nav-fontawesome-icon"></i></a>
+                    <span class="d-block">Atendimento</span>
+                </div>
+                <div class="mx-2 text-center">
+                    <a href="" class="btn btn-outline-light btn-lg" role="button" aria-pressed="true"><i class="fas fa-shopping-cart nav-fontawesome-icon pr-2"></i></a>
+                    <span class="d-block">Carrinho</span>
+                </div>
+                <div class="mx-2 text-center">
+                    <a href="" class="btn btn-outline-light btn-lg" role="button" aria-pressed="true" data-toggle="modal" data-target="#exampleModal" ><i
+                            class="fas fa-user nav-fontawesome-icon"></i></a>
+                    <span class="d-block">Minha Conta</span>
+                </div>
             </div>
         </nav>
         <!-- Modal -->
@@ -82,11 +105,11 @@
                             <input type="password" class="form-control" id="login-senha">
                         </div>
                         <a role="button" class="btn btn-link">Esqueci minha senha!</a>
-                        <a href="./paginas/formulario.html" role="button" class="btn btn-link">Cadastre-se</a>
+                        <a href="./formulario.html" role="button" class="btn btn-link">Cadastre-se</a>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
-                        <button type="button" class="btn btn-outline-success">Entrar</button>
+                        <a href="#" class="btn btn-outline-danger" tabindex="-1" role="button" aria-disabled="true">Sair</a>
+                        <a href="./user.html" class="btn btn-outline-success" tabindex="-1" role="button" aria-disabled="true">Entrar</a>
                     </div>
                 </div>
             </div>
