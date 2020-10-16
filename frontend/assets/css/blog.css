@@ -17,13 +17,22 @@
     text-align: center;
 }
 
-#melancia {
-    width: 800px; /* Imagem precisa redimensionar quando está no mobile*/
-}
-
 #posts {
     padding: 0px 30px;
 }
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+ }
 
 .btn-primary {
     background-color: #f74a54;
@@ -31,6 +40,16 @@
     color: #ffffff;
 }
 
+[class="btn btn-primary"]:hover {
+    background-color: rgb(255, 255, 255);
+    border-color: #f74a54;
+    color: rgb(0, 0, 0);
+}
+
 .page-link {
     color: #f74a54;
+}
+
+[href="#"]:hover {
+    color: #000000;
 }
