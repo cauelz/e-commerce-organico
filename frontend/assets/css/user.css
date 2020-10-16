@@ -1,0 +1,40 @@
+:root {
+    --main-color: #82845d;
+    --main-color2: #b5b47b;
+    --main-bg-color: #ffffff;   
+    --btn-color: #ff6c00;
+    --lightgrey-color: #cccccc;
+    --lightgrey2-color: #e1e1e1;
+    --lightgrey3-color: #f2f3ee;
+    --dark-color: #000000;
+    --font-size: 1rem;
+    --font-size2: 1.5rem;
+    --font-size3: 2rem;
+    --font-size4: 3rem;
+}
+
+.header-bg-color {
+    background-color: var(--main-color2);
+}
+
+.orange-text-color {
+    color: var(--btn-color);
+}
+
+
+
+.avatar-size4 {
+    font-size: var(--font-size4);
+}
+
+.nav-height {
+    min-height: calc(100vh - 224px) ;
+}
+
+.white-background-color {
+    background-color: var(--main-bg-color);
+}
+
+.white-text-color {
+    color: var(--main-bg-color);
+}
