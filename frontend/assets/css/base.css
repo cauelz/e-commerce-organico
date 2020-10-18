@@ -13,6 +13,9 @@
     height: 300px;
 }
 
+.full-view-height {
+    min-height: 100vh;
+}
 
 
 .carousel-indicators {
@@ -38,6 +41,14 @@
 
 .nav-background-white {
     background-color: var(--main-bg-color);
+}
+
+.background-white-color {
+    background-color: var(--main-bg-color);
+}
+
+.background-white-main2 {
+    background-color: var(--main-color2);
 }
 
 .text-color-white {
