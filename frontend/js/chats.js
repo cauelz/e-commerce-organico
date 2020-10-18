@@ -62,7 +62,8 @@ function drawStuff2() {
         0: { side: 'bottom', label: 'ano de 2019'} // Top x-axis.
       }
     },
-    bar: { groupWidth: "60%" }
+    bar: { groupWidth: "60%" },
+    colors: ['#00acac']
   };
 
   var chart = new google.charts.Bar(document.getElementById('columnChart2'));
