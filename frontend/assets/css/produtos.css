@@ -25,9 +25,12 @@ a {
 }
 
 .detalhe-produto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-content: center;
     text-align: center;
-    padding-top: 30px;
+    padding: 30px 130px;
 }
 
 #sku {
@@ -36,14 +39,20 @@ a {
 
 #foto-produto {
     max-width: 400px;
-    max-width: 400px;
     object-fit: cover;
 }
 
-.botoes {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 40px;
+@media only screen and (max-width: 500px) {
+    #foto-produto {
+        width: 200px;
+        object-fit: cover;
+    }
+  }
+
+#botao-carrinho {
+    background-color: var(--btn-color);
+    border: var(--btn-color);
+    margin-top: 20px;
 }
 
 .descricao {
