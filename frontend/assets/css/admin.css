@@ -19,7 +19,7 @@
 }
 
 .nav-min-height {
-    min-height: 100vh;
+    min-height: calc(60vh - 112px);
 }
 
 .background-color-purple {
