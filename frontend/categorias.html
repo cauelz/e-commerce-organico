@@ -9,6 +9,7 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="/frontend/assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/categorias.css">
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
         integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
@@ -140,13 +141,13 @@
                 </a>
             </div>
         </section>
-
+        <!--Breadcrumb-->
         <section>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Orgâni.co</a></li>
-                    <li class="breadcrumb-item"><a href="#">Frutas</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Pitaya Branca</li>
+                    <li class="breadcrumb-item"><a href="#">Categorias</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Todos</li>
                 </ol>
             </nav>
         </section>
@@ -167,8 +168,6 @@
                     <a class="dropdown-item" href="#">Proteínas</a>
                     <a class="dropdown-item" href="#">Outros</a>
                 </div>
-            </div>
-            <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     ORDENAR
                 </button>
@@ -189,23 +188,23 @@
                 <div class="card-body">
                     <h5 class="card-title">Abacaxi</h5>
                     <p class="card-text">R$ 5,60</p>
-                    <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    <a href="#" class="btn btn-primary" id="carrinho">Adicionar ao carrinho</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="https://images.squarespace-cdn.com/content/v1/5b8edfa12714e508f756f481/1538676993194-2GX4EPL3XZ83FEFGA5GY/ke17ZwdGBToddI8pDm48kOmB91umL7L-UCpRVHAKQ-JZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyWWhWiKGuyssEeahuYpJnVAjVSzf_bOdNN-WQlniUYnU3_QVTJrvDi5tm5u56ImXE/morango.jpg" class="card-img-top" alt="Morango">
                 <div class="card-body">
-                    <h5 class="card-title">Morango - Caixa 12 unidades </h5>
+                    <h5 class="card-title">Morango - Caixa 12 un </h5>
                     <p class="card-text">R$ 15,00</p>
-                    <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    <a href="#" class="btn btn-primary" id="carrinho">Adicionar ao carrinho</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <img src="https://w1.ezcdn.com.br/superemkasa/fotos/grande/115753fg1/pimentao-verde-unidade.jpg" class="card-img-top" alt="Pimentão Verde">
                 <div class="card-body">
-                    <h5 class="card-title">Pimentão Verde - 3 unidades</h5>
+                    <h5 class="card-title">Pimentão Verde - 3 un</h5>
                     <p class="card-text">R$ 26,00</p>
-                    <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    <a href="#" class="btn btn-primary" id="carrinho">Adicionar ao carrinho</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -213,7 +212,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cenoura</h5>
                     <p class="card-text">R$ 2,35</p>
-                    <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    <a href="#" class="btn btn-primary" id="carrinho">Adicionar ao carrinho</a>
                 </div>
             </div>
         </section>
@@ -224,7 +223,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Rúcula</h5>
                     <p class="card-text">R$ 5,74</p>
-                    <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    <a href="#" class="btn btn-primary" id="carrinho">Adicionar ao carrinho</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -232,15 +231,15 @@
                 <div class="card-body">
                     <h5 class="card-title">Batata</h5>
                     <p class="card-text">R$ 3,19</p>
-                    <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    <a href="#" class="btn btn-primary" id="carrinho">Adicionar ao carrinho</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="https://hortadobairro.pt/wp-content/uploads/2020/03/alho-seco.jpg" class="card-img-top" alt="Alho">
+                <img src="https://conteudo.imguol.com.br/blogs/218/files/2019/02/iStock-517895450.jpg" class="card-img-top" alt="Alho">
                 <div class="card-body">
-                    <h5 class="card-title">Cabeça de Alho - 2 unidades</h5>
+                    <h5 class="card-title">Cabeça de Alho - 2 un</h5>
                     <p class="card-text">R$ 7,80</p>
-                    <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    <a href="#" class="btn btn-primary" id="carrinho">Adicionar ao carrinho</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -248,46 +247,12 @@
                 <div class="card-body">
                     <h5 class="card-title">Quínoa - 500g</h5>
                     <p class="card-text">R$ 13,50</p>
-                    <a href="#" class="btn btn-primary">Adicionar ao carrinho</a>
+                    <a href="#" class="btn btn-primary" id="carrinho">Adicionar ao carrinho</a>
                 </div>
             </div>
         </section>
 
-        <!-- Fila 3
-        <section class="fila-3">
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </section> -->
+       <!--Colocar Scroll Infinito-->
 
     </main>
     <!-- Footer -->

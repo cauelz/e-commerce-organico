@@ -1,0 +1,68 @@
+:root {
+    --main-color: #82845d;
+    --main-color2: #b5b47b;
+    --main-bg-color: #ffffff;   
+    --btn-color: #ff6c00;
+    --lightgrey-color: #cccccc;
+    --lightgrey2-color: #e1e1e1;
+    --lightgrey3-color: #f2f3ee;
+    --dark-color: #000000;
+}
+
+.breadcrumb {
+    background-color: #ffffff00;
+    padding: 20px 0px 0px 100px;
+    font-size: small;
+}
+
+a {
+    color: var(--main-color);
+}
+
+.dropdown {
+   text-align: center;
+   padding: 40px;
+}
+
+#dropdownMenuButton {
+    background-color: var(--main-color2);
+    border: #b5b47b;
+}
+
+.card {
+    text-align: center;
+    margin: 5px;
+}
+
+.card-text {
+    padding: 20px;
+}
+
+#carrinho {
+    background-color: var(--btn-color);
+    border: var(--btn-color);
+    text-align: center;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: contain;
+}
+
+.fila-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 0px 0px 40px 0px;
+}
+
+.fila-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 0px 0px 40px 0px;
+}
