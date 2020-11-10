@@ -1,0 +1,65 @@
+:root {
+    --main-color: #82845d;
+    --main-color2: #b5b47b;
+    --main-bg-color: #ffffff;   
+    --btn-color: #ff6c00;
+    --lightgrey-color: #cccccc;
+    --lightgrey2-color: #e1e1e1;
+    --lightgrey3-color: #f2f3ee;
+    --dark-color: #000000;
+}
+
+footer ul li a, footer div h5, footer div p {
+    text-decoration: none;
+    color: var(--lightgrey3-color);
+}
+
+.footer-area {
+    background-color: #82845d;
+    margin-top: 20px;
+}
+
+.links {
+    color: white;
+    display: flex;
+    direction: row;
+    justify-content: space-around;
+}
+
+#links-1 {
+    padding-top: 20px;
+}
+
+#links-2 {
+    padding-top: 20px;
+}
+
+#links-3 {
+    padding-top: 20px;
+}
+
+#rede-social {
+    display: flex;
+    direction: row;
+    justify-content: space-around;
+}
+
+#instagram {
+    width: 30px;
+}
+
+#facebook {
+    width: 30px;
+}
+
+#twitter {
+    width: 30px;
+}
+
+.meio-pagamento {
+    text-align: center;
+}
+
+#pagamento {
+    height: 20px;
+}
