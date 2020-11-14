@@ -22,7 +22,7 @@ const Footer = () => {
             <li><h5>Mídias Sociais</h5></li>
               <li id='rede-social'>
                 <li xs={6} md={4}>
-                <Image src="https://lh3.googleusercontent.com/proxy/hgzwKy9DAH3eWYoSiV5n6R4czt7t7wfhs7goBE6A7jfmHokMT7DA-hXDZs7JfZ_HUQ9039ea4HJnbdjesqjygZw" id='instagram' />
+                <Image src="https://images.vexels.com/media/users/3/137380/isolated/preview/1b2ca367caa7eff8b45c09ec09b44c16-logotipo-do---cone-do-instagram-by-vexels.png" id='instagram' />
                 </li>
                 <li xs={6} md={4}>
                 <Image src="https://cdn.icon-icons.com/icons2/478/PNG/128/facebook_47004.png" id='facebook' />
