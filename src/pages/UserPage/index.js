@@ -5,12 +5,17 @@ import Tab from "../../components/Tab/Tab";
 
 const UserPage = () => {
 
-  const tabData = ['Home','Meu Cadastro','Meus Cartões','Meus Pedidos','Atendimento ao Cliente','Notificações'];
+  const tabData = [{tabName:'Home'},{tabName:'Meu Cadastro'},{tabName:'Meus Cartões'},{tabName:'Meus Pedidos'},{tabName:'Atendimento ao Cliente'},{tabName:'Notificações'}];
 
   return (
     <>
       <Header></Header>
       <Tab tabData={tabData}></Tab>
+
+
+        /*RENDERIZAÇÃO CONDICIONAL DO CONTEÚDO DA PÁGINA */
+
+
       <Footer></Footer>
     </>
   );

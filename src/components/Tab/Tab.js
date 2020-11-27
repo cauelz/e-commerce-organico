@@ -8,7 +8,7 @@ const Tab = ({tabData}) => {
       <Nav fill variant="tabs" defaultActiveKey="/user" className="bg-transparent">
             {tabData.map(element => 
               <Nav.Item>
-                <Nav.Link className="text-color btn-outline-secondary"> {element} </Nav.Link>
+                <Nav.Link className="text-color btn-outline-secondary"> {element.tabName} </Nav.Link>
               </Nav.Item>)}
       </Nav>
     </div>
