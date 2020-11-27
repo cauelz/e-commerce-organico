@@ -1,16 +1,19 @@
-import React from 'react';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer'
+import React from "react";
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+import Tab from "../../components/Tab/Tab";
 
+const UserPage = () => {
 
-const HomePage = () => {
-    return (
-      <>
-        <Header></Header>
-        <body></body>
-        <Footer></Footer>
-      </>
-    );
-}
+  const tabData = ['Home','Meu Cadastro','Meus Cartões','Meus Pedidos','Atendimento ao Cliente','Notificações'];
 
-export default HomePage;
+  return (
+    <>
+      <Header></Header>
+      <Tab tabData={tabData}></Tab>
+      <Footer></Footer>
+    </>
+  );
+};
+
+export default UserPage;
