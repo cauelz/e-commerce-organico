@@ -1,14 +1,14 @@
 import React from "react";
 import TabList from "../../components/Tab/TabList";
 
-const UserPage = () => {
+const AtendimentoPage = () => {
 
   return (
     <>
         <TabList />
-        <h1>UserPage</h1>
+        <h1>AtendimentoPage</h1>
     </>
   );
 };
 
-export default UserPage;
+export default AtendimentoPage;
