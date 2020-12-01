@@ -4,7 +4,7 @@ import img1 from '../assets/1.jpg';
 import img2 from '../assets/2.jpg';
 import img3 from '../assets/3.jpg';
 
-const CardGrid = () => {
+const CardGrid = (props) => {
     return(
         <div className="container-fluid d-flex justify-content-center">
             <div className="row">
