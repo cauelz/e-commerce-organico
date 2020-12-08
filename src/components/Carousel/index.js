@@ -1,7 +1,7 @@
 import React from "react";
-import {carousel} from 'react-bootstrap';
+import { Carousel } from 'react-bootstrap';
 
-const Carousel = () => {
+const CarouselDefault = () => {
   return (
     <>
       <Carousel>
@@ -45,4 +45,4 @@ const Carousel = () => {
   );
 }
 
-export default Carousel;
+export default CarouselDefault;
