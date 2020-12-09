@@ -9,8 +9,8 @@ const CartaoPage = () => {
     cardInfo: {
       name: {
         elementConfig: {
-          inputType: 'text',
-          placeholder: 'Julia Barros',
+          type: 'text',
+          placeholder: "Julia Barros",
           require: 'required'
         },
         label: 'Nome como está no Cartão',
@@ -18,29 +18,29 @@ const CartaoPage = () => {
       },
       number: {
         elementConfig: {
-          inputType: 'text',
-          placeholder: 'Número do cartão de crédito',
+          type: 'text',
+          placeholder: '1234 1233 3215 3215',
           require: 'required'
         },
-        label: 'Nome da Pessoa no Cartão',
+        label: 'Número do cartão de crédito',
         value:''
       },
       date: {
         elementConfig: {
-          inputType: 'text',
+          type: 'text',
           placeholder: 'Número do cartão de crédito',
           require: 'required'
         },
-        label: 'Nome da Pessoa no Cartão',
+        label: 'Data de Vencimento',
         value:''
       },
       cvv: {
         elementConfig: {
-          inputType: 'password',
+          type: 'password',
           placeholder: '245',
           require: 'required'
         },
-        label: 'Nome da Pessoa no Cartão',
+        label: 'CVV',
         value:''
       },
     }

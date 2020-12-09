@@ -5,7 +5,7 @@ const InputModel = (props) => {
 
     let inputElement = null;
 
-    switch ( props.inputType ) {
+    switch ( props.elementConfig.type ) {
         case ('text'):
             inputElement = <Form.Control {...props.elementConfig} value={props.value}/>;
             break;
