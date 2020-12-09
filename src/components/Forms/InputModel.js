@@ -5,21 +5,18 @@ const InputModel = (props) => {
 
     let inputElement = null;
 
-    switch ( props.inputCartao[0].inputType ) {
-        case ('input'):
-            inputElement = <Form.Control/>;
-            break;
+    switch ( props.inputType ) {
         case ('text'):
-            inputElement = <Form.Control  type={props.inputCartao[0].inputType} placeholder={props.inputCartao[0].placeholder}/>;
+            inputElement = <Form.Control {...props.elementConfig} value={props.value}/>;
             break;
         case ('password'):
-            inputElement = <Form.Control/>;
+            inputElement = <Form.Control {...props.elementConfig} value={props.value}/>;
             break;
         case ('email'):
-            inputElement = <Form.Control/>;
+            inputElement = <Form.Control {...props.elementConfig} value={props.value}/>;
             break;
         case ('textarea'):
-            inputElement = <Form.Control/>;
+            inputElement = <Form.Control {...props.elementConfig} value={props.value}/>;
             break;
         default:
             inputElement = <Form.Control type='text'/>;
@@ -27,12 +24,10 @@ const InputModel = (props) => {
     }
 
     return (
-        <Form className="container"> 
-            <Form.Group controlId={props.inputCartao[0].controlId}>
-                <Form.Label>{props.inputCartao[0].label}</Form.Label>
-                {inputElement}
-            </Form.Group>
-        </Form>
+        <>
+            <Form.Label>{props.label}</Form.Label>
+            {inputElement}
+        </>
     );
 
 }
