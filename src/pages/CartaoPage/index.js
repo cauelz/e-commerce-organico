@@ -5,9 +5,7 @@ import { Form } from 'react-bootstrap';
 
 const CartaoPage = () => {
 
-  const [inputValues, setInputValues] = useState({});
-
-  const state = {
+   const [inputValues, setInputValues] = useState({
     cardInfo: {
       name: {
         elementConfig: {
@@ -46,28 +44,29 @@ const CartaoPage = () => {
         value:''
       },
     }
-  };
+  });
 
   const cardElementsArray = [];
-  for (let key in state.cardInfo) {
+  for (let key in inputValues.cardInfo) {
     cardElementsArray.push({
       id: key,
-      config: state.cardInfo[key]
+      config: inputValues.cardInfo[key]
     });
   }
 
   const inputChangedHandler = (event, inputIdentifier) => {
 
-      let updatedCardForm = inputValues;
-      updatedCardForm = {
-        ...state.cardInfo
+      const updatedCardForm = {
+        ...inputValues
       };
-      let updatedCardElement = {
+      const updatedCardElement = {
         ...updatedCardForm[inputIdentifier]
       };
+      console.log(event.target.value)
       updatedCardElement.value = event.target.value;
+      console.log(updatedCardElement.value)
       updatedCardForm[inputIdentifier] = updatedCardElement;
-      setInputValues({cardInfo: updatedCardForm});
+      setInputValues(updatedCardForm);
   }
 
   return (
