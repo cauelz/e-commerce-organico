@@ -10,7 +10,7 @@ const CartaoPage = () => {
         elementConfig: {
           type: 'text',
           placeholder: "Julia Barros",
-          require: true
+          required: true
         },
         label: 'Nome como está no Cartão',
         value:''
@@ -19,7 +19,7 @@ const CartaoPage = () => {
         elementConfig: {
           type: 'text',
           placeholder: '1234 1233 3215 3215',
-          require: true
+          required: true
         },
         label: 'Número do cartão de crédito',
         value:''
@@ -28,7 +28,7 @@ const CartaoPage = () => {
         elementConfig: {
           type: 'text',
           placeholder: 'Número do cartão de crédito',
-          require: true
+          required: true
         },
         label: 'Data de Vencimento',
         value:''
@@ -37,7 +37,7 @@ const CartaoPage = () => {
         elementConfig: {
           type: 'password',
           placeholder: '245',
-          require: true
+          required: true
         },
         label: 'CVV',
         value:''
@@ -54,9 +54,9 @@ const CartaoPage = () => {
 
   const inputChangedHandler = (event, inputIdentifier) => {
 
-    const updatedCardForm = {
-      ...inputValues
-    };
+      const updatedCardForm = {
+        ...inputValues
+      };
       const updatedCardElement = {
         ...updatedCardForm[inputIdentifier]
       };
@@ -75,7 +75,7 @@ const CartaoPage = () => {
               elementConfig={cardElement.config.elementConfig}
               label={cardElement.config.label} 
               value={cardElement.config.value}
-              changed={(event) => inputChangedHandler(event, cardElement.id)}
+              changed={event => inputChangedHandler(event, cardElement.id)}
               />
             ))}
         </Form.Group>
