@@ -7,19 +7,19 @@ const InputModel = (props) => {
 
     switch ( props.elementConfig.type ) {
         case ('text'):
-            inputElement = <Form.Control {...props.elementConfig} value={props.value}/>;
+            inputElement = <Form.Control {...props.elementConfig} value={props.value} onChange={props.changed}/>;
             break;
         case ('password'):
-            inputElement = <Form.Control {...props.elementConfig} value={props.value}/>;
+            inputElement = <Form.Control {...props.elementConfig} value={props.value} onChange={props.changed}/>;
             break;
         case ('email'):
-            inputElement = <Form.Control {...props.elementConfig} value={props.value}/>;
+            inputElement = <Form.Control {...props.elementConfig} value={props.value} onChange={props.changed}/>;
             break;
         case ('textarea'):
-            inputElement = <Form.Control {...props.elementConfig} value={props.value}/>;
+            inputElement = <Form.Control {...props.elementConfig} value={props.value} onChange={props.changed}/>;
             break;
         default:
-            inputElement = <Form.Control type='text'/>;
+            inputElement = <Form.Control type='text' onChange={props.changed}/>;
             
     }
 

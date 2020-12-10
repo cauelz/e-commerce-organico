@@ -1,9 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import TabList from "../../components/Tab/TabList";
 import InputModel from '../../components/Forms/InputModel';
 import { Form } from 'react-bootstrap';
 
 const CartaoPage = () => {
+
+  const [inputValues, setInputValues] = useState({});
 
   const state = {
     cardInfo: {
@@ -11,7 +13,7 @@ const CartaoPage = () => {
         elementConfig: {
           type: 'text',
           placeholder: "Julia Barros",
-          require: 'required'
+          require: true
         },
         label: 'Nome como está no Cartão',
         value:''
@@ -20,7 +22,7 @@ const CartaoPage = () => {
         elementConfig: {
           type: 'text',
           placeholder: '1234 1233 3215 3215',
-          require: 'required'
+          require: true
         },
         label: 'Número do cartão de crédito',
         value:''
@@ -29,7 +31,7 @@ const CartaoPage = () => {
         elementConfig: {
           type: 'text',
           placeholder: 'Número do cartão de crédito',
-          require: 'required'
+          require: true
         },
         label: 'Data de Vencimento',
         value:''
@@ -38,7 +40,7 @@ const CartaoPage = () => {
         elementConfig: {
           type: 'password',
           placeholder: '245',
-          require: 'required'
+          require: true
         },
         label: 'CVV',
         value:''
@@ -54,6 +56,20 @@ const CartaoPage = () => {
     });
   }
 
+  const inputChangedHandler = (event, inputIdentifier) => {
+
+      let updatedCardForm = inputValues;
+      updatedCardForm = {
+        ...state.cardInfo
+      };
+      let updatedCardElement = {
+        ...updatedCardForm[inputIdentifier]
+      };
+      updatedCardElement.value = event.target.value;
+      updatedCardForm[inputIdentifier] = updatedCardElement;
+      setInputValues({cardInfo: updatedCardForm});
+  }
+
   return (
     <>
       <TabList />
@@ -63,7 +79,9 @@ const CartaoPage = () => {
               <InputModel key={cardElement.id.key}
               elementConfig={cardElement.config.elementConfig}
               label={cardElement.config.label} 
-              value={cardElement.config.value}/>
+              value={cardElement.config.value}
+              changed={(event) => inputChangedHandler(event, cardElement.id)}
+              />
             ))}
         </Form.Group>
       </Form>
