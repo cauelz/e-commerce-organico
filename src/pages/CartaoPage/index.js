@@ -6,7 +6,6 @@ import { Form } from 'react-bootstrap';
 const CartaoPage = () => {
 
    const [inputValues, setInputValues] = useState({
-    cardInfo: {
       name: {
         elementConfig: {
           type: 'text',
@@ -43,28 +42,25 @@ const CartaoPage = () => {
         label: 'CVV',
         value:''
       },
-    }
   });
 
   const cardElementsArray = [];
   for (let key in inputValues.cardInfo) {
     cardElementsArray.push({
       id: key,
-      config: inputValues.cardInfo[key]
+      config: inputValues[key]
     });
   }
 
   const inputChangedHandler = (event, inputIdentifier) => {
 
-      const updatedCardForm = {
-        ...inputValues
-      };
+    const updatedCardForm = {
+      ...inputValues
+    };
       const updatedCardElement = {
         ...updatedCardForm[inputIdentifier]
       };
-      console.log(event.target.value)
       updatedCardElement.value = event.target.value;
-      console.log(updatedCardElement.value)
       updatedCardForm[inputIdentifier] = updatedCardElement;
       setInputValues(updatedCardForm);
   }
@@ -75,7 +71,7 @@ const CartaoPage = () => {
       <Form className="container">
         <Form.Group controlId='cadastroNovoCartao'>
             {cardElementsArray.map( cardElement =>(
-              <InputModel key={cardElement.id.key}
+              <InputModel key={cardElement.id}
               elementConfig={cardElement.config.elementConfig}
               label={cardElement.config.label} 
               value={cardElement.config.value}
