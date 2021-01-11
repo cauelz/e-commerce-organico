@@ -1,0 +1,29 @@
+:root {
+    --main-color: #82845d;
+    --main-color2: #b5b47b;
+    --main-bg-color: #ffffff;   
+    --btn-color: #ff6c00;
+    --btn-blog-color: #f74a54;
+    --lightgrey-color: #cccccc;
+    --lightgrey2-color: #e1e1e1;
+    --lightgrey3-color: #f2f3ee;
+    --dark-color: #000000;
+}
+
+.breadcrumb {
+    background-color: rgb(255, 255, 255);
+}
+
+.img {
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.produto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    padding: 30px 130px;
+}

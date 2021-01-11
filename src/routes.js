@@ -8,6 +8,7 @@ import PedidoPage from './pages/PedidoPage';
 import NotificacoesPage from './pages/NotificacoesPage';
 import AddCreditCard from './components/Forms/AddCreditCard';
 import BlogPage from "./pages/Blog";
+import DetProduto from "./pages/DetProdutoPage";
 
 
 const Routes = () => {
@@ -15,6 +16,7 @@ const Routes = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/blog" component={BlogPage}/>
+        <Route exact path="/produto" component={DetProduto}/>
         <Route exact path="/user/cadastro" component={CadastroPage}/>
         <Route exact path="/user/cartao" component={AddCreditCard}/>
         <Route exact path="/user/pedidos" component={PedidoPage}/>
