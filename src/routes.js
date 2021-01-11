@@ -7,12 +7,14 @@ import AtendimentoPage from './pages/AtendimentoPage';
 import PedidoPage from './pages/PedidoPage';
 import NotificacoesPage from './pages/NotificacoesPage';
 import AddCreditCard from './components/Forms/AddCreditCard';
+import BlogPage from "./pages/Blog";
 
 
 const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
+        <Route exact path="/blog" component={BlogPage}/>
         <Route exact path="/user/cadastro" component={CadastroPage}/>
         <Route exact path="/user/cartao" component={AddCreditCard}/>
         <Route exact path="/user/pedidos" component={PedidoPage}/>

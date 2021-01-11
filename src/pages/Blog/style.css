@@ -1,0 +1,56 @@
+:root {
+    --main-color: #82845d;
+    --main-color2: #b5b47b;
+    --main-bg-color: #ffffff;   
+    --btn-color: #ff6c00;
+    --btn-blog-color: #f74a54;
+    --lightgrey-color: #cccccc;
+    --lightgrey2-color: #e1e1e1;
+    --lightgrey3-color: #f2f3ee;
+    --dark-color: #000000;
+}
+
+.banner-blog {
+    padding: 5px 30px 30px 30px;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+#card1 {
+    margin-bottom: 20px;
+}
+
+#card2 {
+    margin-bottom: 20px;
+}
+
+#card3 {
+    margin-bottom: 20px;
+}
+
+#posts {
+    padding: 0px 30px;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+ }
+
+
+.page-link {
+    color: #f74a54;
+}
+
+[href="#"]:hover {
+    color: #000000;
+}
