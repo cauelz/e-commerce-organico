@@ -17,7 +17,16 @@ class Serializador {
     }
 }
 
+class SerializadorProdutos extends Serializador {
+
+    constructor(contentType) {
+        super();
+        this.contentType = contentType;
+    }
+}
+
 module.exports = {
     Serializador: Serializador,
+    SerializadorProdutos: SerializadorProdutos,
     formatosAceitos: ['application/json']
 }

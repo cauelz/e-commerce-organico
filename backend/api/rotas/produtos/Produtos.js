@@ -65,8 +65,9 @@ class Produtos {
         const campos = ['produto', 'quantidade', 'categoria'];
         campos.forEach(campo => {
             const valor = this[campo];
+            console.log(typeof(valor))
             if (typeof valor !== 'string' || typeof valor !== 'number' || valor.length === 0) {
-                throw new CampoInvalido(campo);
+                throw new CampoInvalido(campo)
             }
         })
     }
