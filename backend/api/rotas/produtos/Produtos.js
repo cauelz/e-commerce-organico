@@ -13,6 +13,7 @@ class Produtos {
     }
 
     async criar () {
+        this.validar();
         const resultado = await TabelaProdutos.inserir({
             produto: this.produto,
             quantidade: this.quantidade,
@@ -52,6 +53,20 @@ class Produtos {
         }
 
         TabelaProdutos.atualizar(this.id, dadosParaAtualizar);
+    }
+
+    remover() {
+        return TabelaProdutos.remover(this.id)
+    }
+
+    validar() {
+        const campos = ['produto', 'quantidade', 'categoria'];
+        campos.forEach(campo => {
+            const valor = this[campo];
+            if (typeof valor !== 'string' || typeof valor !== 'number' || valor.length === 0) {
+                throw new Error(`O campo '${campo}' está inválido`)
+            }
+        })
     }
 }
 
