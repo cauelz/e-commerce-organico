@@ -1,4 +1,6 @@
 const TabelaProdutos = require('./TabelaProdutos');
+const CampoInvalido = require('../../erros/CampoInvalido');
+const DadosNaoFornecidos = require('../../erros/DadosNaoFornecidos');
 
 class Produtos {
 
@@ -49,7 +51,7 @@ class Produtos {
         })
 
         if (Object.keys(dadosParaAtualizar).length === 0) {
-            throw new Error('Não foram fornecidos dados para atualizar!')
+            throw new DadosNaoFornecidos();
         }
 
         TabelaProdutos.atualizar(this.id, dadosParaAtualizar);
@@ -64,7 +66,7 @@ class Produtos {
         campos.forEach(campo => {
             const valor = this[campo];
             if (typeof valor !== 'string' || typeof valor !== 'number' || valor.length === 0) {
-                throw new Error(`O campo '${campo}' está inválido`)
+                throw new CampoInvalido(campo);
             }
         })
     }
