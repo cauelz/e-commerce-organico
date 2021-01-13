@@ -5,7 +5,7 @@ import '../Button/style.css';
 const BlogButton = () => {
     return (
         <>
-        <Button className="btnprimary" variant="primary" target="_blank">Ver Mais</Button>
+            <Button className="btnprimary" variant="link" target="_blank">Ver Mais</Button>
         </>
     );
   }

@@ -44,7 +44,7 @@ class Produtos {
         const dadosParaAtualizar = {};
 
         campos.forEach( (campo) => {
-            const valor = this[campo];
+            const valor = this[campo]; // usuario.nome = "caue", usuario[nome] = "caue"
             if (typeof valor === 'string' || typeof valor === 'number' && valor.length) {
                 dadosParaAtualizar[campo] = valor;
             }
@@ -66,7 +66,7 @@ class Produtos {
         campos.forEach(campo => {
             const valor = this[campo];
             console.log(typeof(valor))
-            if (typeof valor !== 'string' || typeof valor !== 'number' || valor.length === 0) {
+            if (typeof valor !== 'string' || typeof valor !== 'number' || !valor.length) {
                 throw new CampoInvalido(campo)
             }
         })

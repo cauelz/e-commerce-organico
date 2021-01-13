@@ -11,9 +11,9 @@
 }
 
 .btnprimary {
-    background-color: var(--btn-blog-color);
+    background-color: var(--btn-blog-color) !important;
     border-color: var(--btn-blog-color);
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 

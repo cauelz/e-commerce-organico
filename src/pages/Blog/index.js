@@ -15,7 +15,7 @@ const BlogPage = () => {
                 />
             </header>
             <section>
-                <div className="row row-cols-2 row-cols-md-1 mx-0" >
+                <div className="row row-cols-2 row-cols-md-1 mx-0 container" >
                     <div className="col-md-4">
                         <Card style={{ width: '23rem' }} id="card1">
                             <Card.Img variant="top" src="https://images.squarespace-cdn.com/content/v1/5b625f0d96d455ef934bf48c/1561745268571-Y5NCFEK8RDPMDQT7VLEC/ke17ZwdGBToddI8pDm48kKJv-aO3J5juaDXx2EYMqp1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyw47c-nJBBHNZ4h7h4Tq8iVZGn8qfHCFTN-PhSu7i9yVpKEAzGHcwgiLiG1ignBos/001.jpg?format=750w" class="card-img-top" alt="Comida orgânica tem sabor?" />
