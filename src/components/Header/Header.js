@@ -59,7 +59,7 @@ const Header = () => {
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
-    
+
     </Navbar>
 
   );

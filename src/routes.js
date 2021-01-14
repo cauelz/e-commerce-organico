@@ -8,20 +8,22 @@ import PedidoPage from './pages/PedidoPage';
 import NotificacoesPage from './pages/NotificacoesPage';
 import AddCreditCard from './components/Forms/AddCreditCard';
 import BlogPage from "./pages/Blog";
+import ProdutosPage from './pages/ProdutosPage';
 
 
 const Routes = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/blog" component={BlogPage}/>
-        <Route exact path="/user/cadastro" component={CadastroPage}/>
-        <Route exact path="/user/cartao" component={AddCreditCard}/>
-        <Route exact path="/user/pedidos" component={PedidoPage}/>
-        <Route exact path="/user/atendimento" component={AtendimentoPage}/>
-        <Route exact path="/user/notificacoes" component={NotificacoesPage}/>
-        <Route exact path="/user" component={UserPage}/>
-        <Route path="/" component={HomePage}/>
+        <Route exact path="/blog" component={BlogPage} />
+        <Route exact path="/produtos" component={ProdutosPage} />
+        <Route exact path="/user/cadastro" component={CadastroPage} />
+        <Route exact path="/user/cartao" component={AddCreditCard} />
+        <Route exact path="/user/pedidos" component={PedidoPage} />
+        <Route exact path="/user/atendimento" component={AtendimentoPage} />
+        <Route exact path="/user/notificacoes" component={NotificacoesPage} />
+        <Route exact path="/user" component={UserPage} />
+        <Route path="/" component={HomePage} />
       </Switch>
     </BrowserRouter>
   );
