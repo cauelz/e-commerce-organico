@@ -1,5 +1,8 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import CarouselDefault from './components/Carousel/Carousel';
 import HomePage from "./pages/HomePage";
 import UserPage from './pages/UserPage';
 import CadastroPage from './pages/CadastroPage';
@@ -14,6 +17,8 @@ import ProdutosPage from './pages/ProdutosPage';
 const Routes = () => {
   return (
     <BrowserRouter>
+      <Header></Header>
+      <CarouselDefault></CarouselDefault>
       <Switch>
         <Route exact path="/blog" component={BlogPage} />
         <Route exact path="/produtos" component={ProdutosPage} />
@@ -25,6 +30,7 @@ const Routes = () => {
         <Route exact path="/user" component={UserPage} />
         <Route path="/" component={HomePage} />
       </Switch>
+      <Footer></Footer>
     </BrowserRouter>
   );
 };
