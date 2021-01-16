@@ -29,4 +29,4 @@ const users = [
   },
 ]
 
-module.export = users;
+module.exports = users;
