@@ -1,4 +1,5 @@
 import React from "react";
+import { LinkContainer } from 'react-router-bootstrap';
 import LoginModal from "./LoginModal/LoginModal";
 import {
   Navbar,
@@ -19,11 +20,15 @@ const Header = () => {
 
   return (
     <Navbar bg="light" expand="lg">
-      <Navbar.Brand href="#home" className="nav-base-size">orgâni.co</Navbar.Brand>
+      <LinkContainer to='/'>
+        <Navbar.Brand className="nav-base-size">orgâni.co</Navbar.Brand>
+      </LinkContainer>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="#home">Início</Nav.Link>
+          <LinkContainer to='/'>
+            <Nav.Link>Início</Nav.Link>
+          </LinkContainer>
           <Nav.Link href="#link">Quem Somos</Nav.Link>
           <NavDropdown title="Produtos" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">Frutas</NavDropdown.Item>
@@ -59,7 +64,7 @@ const Header = () => {
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
-    
+
     </Navbar>
 
   );
