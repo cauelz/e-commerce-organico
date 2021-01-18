@@ -26,32 +26,32 @@ const DetProduto = () => {
             </section>
             <section className="" id="produto">
                 <div id="detalhe-produto">
-                    <Image src={Pitaya} id="img-produto" />
+                    <Image src={product.image} id="img-produto" alt={product.name} />
                     <div>
-                        <h4>Pitaya Branca</h4>
+                        <h4>{product.name}</h4>
                         <p id="sku">cód: 19373</p>
-                        <h3>R$ 30</h3>
-                        <div id="sku-form"> 
-                        <Form>
-                            <Form.Group controlId="exampleForm.ControlSelect1">
-                                <Form.Label>Quantidade</Form.Label>
-                                <Form.Control as="select">
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                </Form.Control>
-                            </Form.Group>
-                            <Form.Group controlId="exampleForm.ControlTextarea1">
-                                <Form.Label>Calcule seu frete</Form.Label>
-                                <Form.Control
-                                    type="text"
-                                    placeholder="CEP"
-                                    name="zip"
-                                />
-                            </Form.Group>
-                        </Form>
+                        <h3>R${product.price}</h3>
+                        <div id="sku-form">
+                            <Form>
+                                <Form.Group controlId="exampleForm.ControlSelect1">
+                                    <Form.Label>Quantidade</Form.Label>
+                                    <Form.Control as="select">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </Form.Control>
+                                </Form.Group>
+                                <Form.Group controlId="exampleForm.ControlTextarea1">
+                                    <Form.Label>Calcule seu frete</Form.Label>
+                                    <Form.Control
+                                        type="text"
+                                        placeholder="CEP"
+                                        name="zip"
+                                    />
+                                </Form.Group>
+                            </Form>
                         </div>
                         <Button variant="success">Adicionar ao carrinho</Button>
                     </div>
@@ -60,7 +60,7 @@ const DetProduto = () => {
             <section>
                 <div id="descricao-produto">
                     <h6>DESCRIÇÃO</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ex amet vel, voluptates vero repudiandae a, optio ratione mollitia qui hic fuga ullam placeat suscipit alias, libero fugiat harum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ex amet vel, voluptates vero repudiandae a, optio ratione mollitia qui hic fuga ullam placeat suscipit alias, libero fugiat harum provident.</p>
+                    <p>{product.description}</p>
                 </div>
             </section>
             <section className="destaques">
