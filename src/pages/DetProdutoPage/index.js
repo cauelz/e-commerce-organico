@@ -17,11 +17,11 @@ import Message from "../../components/Message/Message";
 import "../DetProdutoPage/style.css";
 
 const DetProduto = ({ history, match }) => {
-    const [qty, setQty] = useState(0);
+    const [qty, setQty] = useState(1);
 
     const dispatch = useDispatch();
 
-    const productDetails = useSelector(state => state.productDetails);
+    const productDetails = useSelector((state) => state.productDetails);
 
     const { loading, error, product } = productDetails;
 
