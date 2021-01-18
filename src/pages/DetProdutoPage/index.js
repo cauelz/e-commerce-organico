@@ -9,6 +9,7 @@ import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import Card from "react-bootstrap/Card";
 import CardDeck from 'react-bootstrap/CardDeck';
+import Form from 'react-bootstrap/Form';
 import "../DetProdutoPage/style.css";
 
 const DetProduto = () => {
@@ -23,24 +24,48 @@ const DetProduto = () => {
                     <Breadcrumb.Item active>Pitaya</Breadcrumb.Item>
                 </Breadcrumb>
             </section>
-            <section className="produto">
-                <div>
-                    <Image src={Pitaya} fluid />
+            <section className="" id="produto">
+                <div id="detalhe-produto">
+                    <Image src={Pitaya} id="img-produto" />
                     <div>
                         <h4>Pitaya Branca</h4>
                         <p id="sku">cód: 19373</p>
-                        <h3>R$ 30   </h3>
+                        <h3>R$ 30</h3>
+                        <div id="sku-form"> 
+                        <Form>
+                            <Form.Group controlId="exampleForm.ControlSelect1">
+                                <Form.Label>Quantidade</Form.Label>
+                                <Form.Control as="select">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </Form.Control>
+                            </Form.Group>
+                            <Form.Group controlId="exampleForm.ControlTextarea1">
+                                <Form.Label>Calcule seu frete</Form.Label>
+                                <Form.Control
+                                    type="text"
+                                    placeholder="CEP"
+                                    name="zip"
+                                />
+                            </Form.Group>
+                        </Form>
+                        </div>
                         <Button variant="success">Adicionar ao carrinho</Button>
                     </div>
                 </div>
-                <div class="descricao-produto">
+            </section>
+            <section>
+                <div id="descricao-produto">
                     <h6>DESCRIÇÃO</h6>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ex amet vel, voluptates vero repudiandae a, optio ratione mollitia qui hic fuga ullam placeat suscipit alias, libero fugiat harum provident. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ex amet vel, voluptates vero repudiandae a, optio ratione mollitia qui hic fuga ullam placeat suscipit alias, libero fugiat harum provident.</p>
                 </div>
             </section>
             <section className="destaques">
                 <div className="titulo-destaques">
-                    <h2>COMPLETE SEU CARRINHO</h2>
+                    <h2>COMPLETE SUAS COMPRAS</h2>
                 </div>
                 <div className="container-fluid d-flex flex-wrap mx-0 justify-content-center">
                     <CardDeck>
@@ -49,28 +74,28 @@ const DetProduto = () => {
                             <Card.Body>
                                 <Card.Title>FRUTAS</Card.Title>
                             </Card.Body>
-                            <Button variant="success" id="button-add">Adicionar ao carrinho</Button>
+                            <Button variant="success" id="button-add">Ver mais produtos</Button>
                         </Card>
                         <Card>
                             <Card.Img variant="top" src={Legumes} />
                             <Card.Body>
                                 <Card.Title>LEGUMES</Card.Title>
                             </Card.Body>
-                            <Button variant="success" id="button-add">Adicionar ao carrinho</Button>
+                            <Button variant="success" id="button-add">Ver mais produtos</Button>
                         </Card>
                         <Card>
                             <Card.Img variant="top" src={Verduras} />
                             <Card.Body>
                                 <Card.Title>VERDURAS</Card.Title>
                             </Card.Body>
-                            <Button variant="success" id="button-add">Adicionar ao carrinho</Button>
+                            <Button variant="success" id="button-add">Ver mais produtos</Button>
                         </Card>
                         <Card>
                             <Card.Img variant="top" src={Tuberculos} />
                             <Card.Body>
                                 <Card.Title>TUBÉRCULOS</Card.Title>
                             </Card.Body>
-                            <Button variant="success" id="button-add">Adicionar ao carrinho</Button>
+                            <Button variant="success" id="button-add">Ver mais produtos</Button>
                         </Card>
                     </CardDeck>
                 </div>
