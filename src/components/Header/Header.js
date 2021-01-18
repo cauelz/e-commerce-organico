@@ -4,7 +4,6 @@ import LoginModal from "./LoginModal/LoginModal";
 import {
   Navbar,
   Nav,
-  NavDropdown,
   Form,
   FormControl,
   Button
@@ -30,24 +29,8 @@ const Header = () => {
             <Nav.Link>Início</Nav.Link>
           </LinkContainer>
           <Nav.Link href="#link">Quem Somos</Nav.Link>
-          <NavDropdown title="Produtos" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Frutas</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
-              Verduras
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Legumes</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
-              Carnes
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.5">
-              Laticínios
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.6">
-              Temperos e Chás
-            </NavDropdown.Item>
-          </NavDropdown>
-          <Nav.Link href="#home">Blog</Nav.Link>
+          <Nav.Link href="/produtos">Produtos</Nav.Link>
+          <Nav.Link href="/blog">Blog</Nav.Link>
           <Nav.Link href="#home">Dúvidas</Nav.Link>
           <Nav.Link href="#home">Contato</Nav.Link>
         </Nav>

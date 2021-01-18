@@ -13,6 +13,7 @@ import AddCreditCard from './components/Forms/AddCreditCard';
 import BlogPage from "./pages/Blog";
 import DetProduto from "./pages/DetProdutoPage";
 import ProdutosPage from './pages/ProdutosPage';
+import CarrinhoPage from './pages/CarrinhoPage/CarrinhoPage';
 
 
 const Routes = () => {
@@ -24,6 +25,7 @@ const Routes = () => {
         <Route exact path="/blog" component={BlogPage} />
         <Route exact path="/produtos" component={ProdutosPage} />
         <Route exact path="/produtos/:id" component={DetProduto} />
+        <Route exact path="/carrinho/:id" component={CarrinhoPage} />
         <Route exact path="/user/cadastro" component={CadastroPage} />
         <Route exact path="/user/cartao" component={AddCreditCard} />
         <Route exact path="/user/pedidos" component={PedidoPage} />

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from 'react-redux';
 import Frutas from "../../assets/frutas.jpg";
 import Legumes from "../../assets/legumes.png";
@@ -10,19 +10,28 @@ import Button from 'react-bootstrap/Button';
 import Card from "react-bootstrap/Card";
 import CardDeck from 'react-bootstrap/CardDeck';
 import Form from 'react-bootstrap/Form';
+import { Row, Col, ListGroup } from 'react-bootstrap';
 import { listProductDetails } from '../../actions/productActions';
 import Loader from "../../components/Loader/Loader";
 import Message from "../../components/Message/Message";
 import "../DetProdutoPage/style.css";
 
-const DetProduto = ({ match }) => {
+const DetProduto = ({ history, match }) => {
+    const [qty, setQty] = useState(0);
+
     const dispatch = useDispatch();
 
     const productDetails = useSelector(state => state.productDetails);
+
     const { loading, error, product } = productDetails;
+
     useEffect(() => {
         dispatch(listProductDetails(match.params.id));
     }, [dispatch, match])
+
+    const addToCartHandler = () => {
+        history.push(`/carrinho/${match.params.id}?qty=${qty}`)
+    }
 
     return (
         <>
@@ -43,30 +52,63 @@ const DetProduto = ({ match }) => {
                             <div>
                                 <h4>{product.name}</h4>
                                 <p id="sku">cód: 19373</p>
-                                <h3>R${product.price}</h3>
+                                <h2>R${product.price}</h2>
                                 <div id="sku-form">
-                                    <Form>
-                                        <Form.Group controlId="exampleForm.ControlSelect1">
-                                            <Form.Label>Quantidade</Form.Label>
-                                            <Form.Control as="select">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </Form.Control>
-                                        </Form.Group>
-                                        <Form.Group controlId="exampleForm.ControlTextarea1">
-                                            <Form.Label>Calcule seu frete</Form.Label>
-                                            <Form.Control
-                                                type="text"
-                                                placeholder="CEP"
-                                                name="zip"
-                                            />
-                                        </Form.Group>
-                                    </Form>
+                                    <ListGroup variant='flush'>
+                                        <ListGroup.Item>
+                                            <Row>
+                                                <Col>Price:</Col>
+                                                <Col>
+                                                    <strong>R${product.price}</strong>
+                                                </Col>
+                                            </Row>
+                                        </ListGroup.Item>
+
+                                        <ListGroup.Item>
+                                            <Row>
+                                                <Col>Status:</Col>
+                                                <Col>
+                                                    {product.countInStock > 0 ? 'In Stock' : 'Out Of Stock'}
+                                                </Col>
+                                            </Row>
+                                        </ListGroup.Item>
+
+                                        {product.countInStock > 0 && (
+                                            <ListGroup.Item>
+                                                <Row>
+                                                    <Col>Qty</Col>
+                                                    <Col>
+                                                        <Form.Control
+                                                            as='select'
+                                                            value={qty}
+                                                            onChange={(e) => setQty(e.target.value)}
+                                                        >
+                                                            {[...Array(product.countInStock).keys()].map(
+                                                                (x) => (
+                                                                    <option key={x + 1} value={x + 1}>
+                                                                        {x + 1}
+                                                                    </option>
+                                                                )
+                                                            )}
+                                                        </Form.Control>
+                                                    </Col>
+                                                </Row>
+                                            </ListGroup.Item>
+                                        )}
+
+                                        <ListGroup.Item>
+                                            <Button
+                                                onClick={addToCartHandler}
+                                                className='btn-block'
+                                                variant='success'
+                                                type='button'
+                                                disabled={product.countInStock === 0}
+                                            >
+                                                Add To Cart
+                                            </Button>
+                                        </ListGroup.Item>
+                                    </ListGroup>
                                 </div>
-                                <Button variant="success">Adicionar ao carrinho</Button>
                             </div>
                         </div>
                     </section>
