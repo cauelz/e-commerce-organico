@@ -71,6 +71,18 @@ body {
 #compras {
     padding-top: 75px;
     height: auto;
+    
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+}
+
+td {
+    width: 170px;
+    height: auto;
+    margin: 10px;
 }
 
 #compras img {
@@ -189,7 +201,6 @@ body {
     
 }
 
-}
-    
+
     
     
