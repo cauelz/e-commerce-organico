@@ -23,7 +23,7 @@ const Routes = () => {
       <Switch>
         <Route exact path="/blog" component={BlogPage} />
         <Route exact path="/produtos" component={ProdutosPage} />
-        <Route exact path="/produtos/produto/:id" component={DetProduto} />
+        <Route exact path="/produtos/:id" component={DetProduto} />
         <Route exact path="/user/cadastro" component={CadastroPage} />
         <Route exact path="/user/cartao" component={AddCreditCard} />
         <Route exact path="/user/pedidos" component={PedidoPage} />
