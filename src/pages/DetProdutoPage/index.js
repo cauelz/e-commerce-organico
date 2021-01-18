@@ -49,7 +49,7 @@ const DetProduto = ({ history, match }) => {
                     <section id="produto">
                         <div id="detalhe-produto">
                             <Image src={product.image} id="img-produto" alt={product.name} />
-                            <div>
+                            <Col md={2}>
                                 <h4>{product.name}</h4>
                                 <p id="sku">cód: 19373</p>
                                 <h2>R${product.price}</h2>
@@ -109,7 +109,7 @@ const DetProduto = ({ history, match }) => {
                                         </ListGroup.Item>
                                     </ListGroup>
                                 </div>
-                            </div>
+                            </Col>
                         </div>
                     </section>
                     <section>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { Row, Col, ListGroup, Image, Form, Button, Card } from 'react-bootstrap';
 import Message from '../../components/Message/Message';
-import { addToCart } from '../../actions/cartActions';
+import { addToCart, removeFromCart } from '../../actions/cartActions';
 
 const CarrinhoPage = ({ match, location, history }) => {
 
@@ -23,7 +23,7 @@ const CarrinhoPage = ({ match, location, history }) => {
   }, [dispatch, productId, qty])
 
   const removeFromCartHandler = (id) => {
-    console.log('remove')
+    dispatch(removeFromCart(id))
   }
 
   const checkoutHandler = () => {
@@ -47,7 +47,6 @@ const CarrinhoPage = ({ match, location, history }) => {
                   <ListGroup.Item key={item.product}>
                     <Row>
                       <Col md={2}>
-                        <Image src={item.image} alt={item.name} fluid rounded />
                       </Col>
                       <Col md={3}>
                         <Link to={`/product/${item.product}`} className=''>{item.name}</Link>
