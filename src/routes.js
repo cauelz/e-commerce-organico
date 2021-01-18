@@ -21,17 +21,9 @@ const Routes = () => {
       <Header></Header>
       <CarouselDefault></CarouselDefault>
       <Switch>
-        <Route exact path="/blog" component={BlogPage}/>
-        <Route exact path="/produto" component={DetProduto}/>
-        <Route exact path="/user/cadastro" component={CadastroPage}/>
-        <Route exact path="/user/cartao" component={AddCreditCard}/>
-        <Route exact path="/user/pedidos" component={PedidoPage}/>
-        <Route exact path="/user/atendimento" component={AtendimentoPage}/>
-        <Route exact path="/user/notificacoes" component={NotificacoesPage}/>
-        <Route exact path="/user" component={UserPage}/>
-        <Route path="/" component={HomePage}/>
         <Route exact path="/blog" component={BlogPage} />
         <Route exact path="/produtos" component={ProdutosPage} />
+        <Route exact path="/produto" component={DetProduto} />
         <Route exact path="/user/cadastro" component={CadastroPage} />
         <Route exact path="/user/cartao" component={AddCreditCard} />
         <Route exact path="/user/pedidos" component={PedidoPage} />
