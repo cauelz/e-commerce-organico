@@ -27,3 +27,31 @@
     text-align: center;
     padding: 30px 130px;
 }
+
+.destaques {
+    margin-bottom: 50px;
+}
+
+.titulo-destaques {
+    margin: 30px;
+}
+
+.CardDeck {
+    width: 15rem;
+}
+
+.card-body {
+    border-color: var(--main-bg-color);
+}
+
+.card-title {
+    text-align: center;
+}
+
+#button-add {
+    text-align: center;
+    margin: 0px 20px 10px;
+    background-color: var(--btn-color);
+    border: var(--btn-color);
+    font-weight: bold;
+}
