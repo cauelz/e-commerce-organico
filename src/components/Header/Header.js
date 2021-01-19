@@ -1,18 +1,28 @@
 import React from "react";
+import { useDispatch, useSelector } from 'react-redux';
 import { LinkContainer } from 'react-router-bootstrap';
 import {
   Navbar,
   Nav,
   Form,
   FormControl,
-  Button
+  Button,
+  NavDropdown
 } from "react-bootstrap";
 import './style.css';
-
-
-
+import { logout } from '../../actions/userActions';
 
 const Header = () => {
+
+  const dispatch = useDispatch();
+
+  const userLogin = useSelector(state => state.userLogin);
+  const { userInfo } = userLogin;
+
+  const logoutHandler = () => {
+    dispatch(logout())
+  }
+
   return (
     <Navbar bg="light" expand="lg">
       <LinkContainer to='/'>
@@ -36,11 +46,21 @@ const Header = () => {
         </Form>
         <Nav.Link href="#home"><i class="far fa-comments nav-fontawesome-icon"></i></Nav.Link>
         <Nav.Link href="#home"><i class="fas fa-shopping-cart nav-fontawesome-icon"></i></Nav.Link>
-        <LinkContainer to='/login'>
-          <Nav.Link><i class="far fa-user nav-fontawesome-icon"></i></Nav.Link>
-        </LinkContainer>
-      </Navbar.Collapse>
-    </Navbar>
+        {userInfo ? (
+          <NavDropdown title={userInfo.name} id='username'>
+            <LinkContainer to='/profile'>
+              <NavDropdown.Item>Profile</NavDropdown.Item>
+            </LinkContainer>
+            <NavDropdown.Item onClick={logoutHandler}>Logout</NavDropdown.Item>
+          </NavDropdown>
+        ) :
+          <LinkContainer to='/login'>
+            <Nav.Link variant='light'><i class="far fa-user nav-fontawesome-icon"></i></Nav.Link>
+          </LinkContainer>
+        }
+
+      </Navbar.Collapse >
+    </Navbar >
 
   );
 }
