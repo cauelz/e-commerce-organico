@@ -108,7 +108,7 @@ const updateUserProfile = asyncHandler(async (req, resp) => {
     })
   } else {
     resp.status(404);
-    throw new Error('User not found');
+    throw new Error('Usuário não encontrado');
   }
 })
 

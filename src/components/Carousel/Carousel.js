@@ -12,8 +12,7 @@ const CarouselHome = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Seja Saudável, sua vida vale muito.</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="height-300">
@@ -24,8 +23,7 @@ const CarouselHome = () => {
         />
 
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Aqui na Orgâni.co, você adquire os melhores produtos.</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className="height-300">
@@ -36,10 +34,7 @@ const CarouselHome = () => {
         />
 
         <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h3>Nossos fornecedores são todos aprovados pela ANVISA</h3>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
