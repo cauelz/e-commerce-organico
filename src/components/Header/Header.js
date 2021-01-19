@@ -1,6 +1,5 @@
 import React from "react";
 import { LinkContainer } from 'react-router-bootstrap';
-import LoginModal from "./LoginModal/LoginModal";
 import {
   Navbar,
   Nav,
@@ -14,9 +13,6 @@ import './style.css';
 
 
 const Header = () => {
-
-  const [modalShow, setModalShow] = React.useState(false);
-
   return (
     <Navbar bg="light" expand="lg">
       <LinkContainer to='/'>
@@ -31,8 +27,8 @@ const Header = () => {
           <Nav.Link href="#link">Quem Somos</Nav.Link>
           <Nav.Link href="/produtos">Produtos</Nav.Link>
           <Nav.Link href="/blog">Blog</Nav.Link>
-          <Nav.Link href="#home">Dúvidas</Nav.Link>
-          <Nav.Link href="#home">Contato</Nav.Link>
+          <Nav.Link href="/">Dúvidas</Nav.Link>
+          <Nav.Link href="/">Contato</Nav.Link>
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="faça sua busca" className="mr-sm-2" />
@@ -40,14 +36,10 @@ const Header = () => {
         </Form>
         <Nav.Link href="#home"><i class="far fa-comments nav-fontawesome-icon"></i></Nav.Link>
         <Nav.Link href="#home"><i class="fas fa-shopping-cart nav-fontawesome-icon"></i></Nav.Link>
-        <Nav.Link href="#home" onClick={() => setModalShow(true)}><i class="far fa-user nav-fontawesome-icon"></i></Nav.Link>
+        <LinkContainer to='/login'>
+          <Nav.Link><i class="far fa-user nav-fontawesome-icon"></i></Nav.Link>
+        </LinkContainer>
       </Navbar.Collapse>
-
-      <LoginModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-      />
-
     </Navbar>
 
   );
