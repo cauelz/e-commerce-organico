@@ -1,0 +1,85 @@
+:root {
+    --main-color: #82845d;
+    --main-color2: #b5b47b;
+    --main-bg-color: #ffffff;   
+    --btn-color: #ff6c00;
+    --btn-blog-color: #f74a54;
+    --lightgrey-color: #cccccc;
+    --lightgrey2-color: #e1e1e1;
+    --lightgrey3-color: #f2f3ee;
+    --dark-color: #000000;
+}
+
+.titulo-destaques {
+    text-align: center;
+}
+
+.titulo-blog {
+    text-align: center;
+    margin-top: 60px;
+}
+
+#blog-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 60px 0px 60px;
+}
+
+.card1 {
+    margin: 30px;
+
+}
+
+#btnbutton1 {
+    margin: 0px 70px 20px;
+    background-color: var(--btn-blog-color);
+    border: var(--btn-blog-color);
+}
+
+.card-img {
+    max-width: 200px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 500px) {
+    #img-produto {
+        width: 200px;
+        object-fit: cover;
+    }
+  }
+
+.destaques {
+    margin-bottom: 50px;
+}
+
+.titulo-destaques {
+    margin: 30px;
+}
+
+.CardDeck {
+    width: 15rem;
+}
+
+.card-body {
+    border-color: var(--main-bg-color);
+}
+
+.card-title {
+    text-align: center;
+}
+
+#button-add {
+    text-align: center;
+    margin: 0px 20px 10px;
+    background-color: var(--btn-color);
+    border: var(--btn-color);
+    font-weight: bold;
+}
+
+.agradecimento {
+    text-align: center;
+    margin: 60px 80px;
+    background-color: var(--lightgrey3-color);
+    padding: 40px;
+}
