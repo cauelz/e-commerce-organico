@@ -1,5 +1,5 @@
 //Creacion del objeto de Prueba
-let productoPrueba = [
+const productoPrueba = [
     {
     Descripcion: "Tomates Frescos por Kilo",
     Precio : 125,
@@ -34,10 +34,9 @@ insertarProducto();
 function insertarProducto() {
     
     const totalProductos = productoPrueba.length;
-    productoPrueba.forEach( producto => {
+    for (let i=0; i<totalProductos; i++) {
 
-        for (let i = 0; i <= totalProductos; i++) {
-            const resumenProductos = document.createElement('tr');
+        const resumenProductos = document.createElement('tr');
             resumenProductos.appendChild(imagen);
     
             resumenProductos.innerHTML += 
@@ -51,15 +50,20 @@ function insertarProducto() {
     
             Compras.appendChild(resumenProductos);
 
-        }
+
+
+    }
+
+            
+        };
+
         
         
 
        
-    });
+    
 
     
-}
 
 
 // Calculo de Subtotal
@@ -71,24 +75,29 @@ function calculosubtotal(productoPrueba) {
     console.log('vamos a calcular el subtotal');
 
     let valorSubtotal = 0;
+    let subtotal;
     console.log(valorSubtotal);
     console.log(productoPrueba.length);
     console.log(productoPrueba[0].Precio);
     
    
-     productoPrueba.forEach( subtotal => {
-         for (let i=0; i <= productoPrueba.length; i++) {
-            subtotal = valorSubtotal + Number(productoPrueba[i].Precio);
-            console.log(subtotal);
-         }
+    for (let i=0; i < productoPrueba.length; i++) {
+        subtotal = valorSubtotal + productoPrueba[i].Precio;
+        valorSubtotal = subtotal;
+        
+            
+            }
+
+            
+            
          
       
-    })
+    };
     
     
        
         
-    };
+
        
     
 
