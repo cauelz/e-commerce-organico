@@ -47,7 +47,7 @@ const Header = () => {
         <Nav.Link href="#home"><i class="far fa-comments nav-fontawesome-icon"></i></Nav.Link>
         <Nav.Link href="#home"><i class="fas fa-shopping-cart nav-fontawesome-icon"></i></Nav.Link>
         {userInfo ? (
-          <NavDropdown title={userInfo.name} id='username'>
+          <NavDropdown className='mx-2' title={userInfo.name} id='username'>
             <LinkContainer to='/profile'>
               <NavDropdown.Item>Profile</NavDropdown.Item>
             </LinkContainer>
