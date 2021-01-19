@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/checkout-cv.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Checkout-Projeto-Organico</title>
+</head>
+<body>
+<header></header>
+<div class="row">
+    <!-- Lado de 8 columna -->
+<div id="container-7" class="col-xl-7 col-lg-7 col-md-7 col-sm-7">
+    <!--Logo de inicio-->
+    <div id="logo-pgto">
+        <img src="./assets/images/img-Jesus/Banner check out.jpeg" alt="logos das formas de pagamento">
+    </div>
+    <!-- Submenu de opciones  Pasos del proceso de compra -->
+    <div id="submenu-adiantamento">
+        <div id="links">
+            <ul>
+                <li><a href="#">Carrinho</a></li>
+                <li id="arrow">></li>
+                <li><a href="#">Informaçoes</a></li>
+                <li id="arrow">></li>
+                <li><a href="#">Frete</a></li>
+                <li id="arrow">></li>
+                <li><a href="#">Pagamento</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- formulario de datos para iniciar la compra | va organizado de lado izquierdo con ancho de 8 columna-->
+    <div id="formulario-checkout">
+        <form>
+            <h4>Informaçoes de Contato</h4>
+            <div id="dados-de-contato">
+            <input class="form-control" type="text" name="email o telefone" placeholder="escreva seu email o telefono">
+            </div>            
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Quero receber informaçoes de novidades e ofertas
+                </label>
+            </div>
+            <h4>Endereço</h4>
+            <div>
+                <div class="form-row">
+                <div id="nome" class="col-md-6">
+                    <input class="form-control" type="text" name="nome" placeholder="escreva seu nome">
+                </div>
+                <div id="sobrenome" class="col-md-6">
+                    <input class="form-control" type="text" name="sobrenome" placeholder="escreva seu sobrenome">
+                </div>
+            </div>
+            <div id="endereco">
+                <input class="form-control" type="text" name="nome" placeholder="Rua, Bairro o setor">
+                <input class="form-control" type="text" name="nome" placeholder="Apartamento o numero de casa">
+                <input class="form-control" type="text" name="nome" placeholder="Cidade">
+            </div>
+            <div class="form-row">
+                <div class="col-md-4">
+                    <input id="pais" type="text" class="form-control" placeholder="Pais">
+                  </div>
+                  <div class="col-md-4">
+                    <input id="estado" type="text" class="form-control" placeholder="Estado">
+                  </div>
+                  <div class="col-md-4">
+                    <input id="cep" type="text" class="form-control" placeholder="CEP">
+                  </div>
+                </div>
+            <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                        Salvar minhas informações para a próxima vez
+                    </label>
+            </div>
+            </div>
+        </form>
+<!-- Botones de avance y retroceso -->
+        <div id="submenu-Avanzar">
+            <div id="Avanzo">
+                <ul id="Avanzo-1">
+                    <li class="md-order-1 sm-order-1"><a href="#"><h6 id="retro-Avanzo">Voltar ao Carrinho</h6></a></li>
+                    <li class="md-order-0 sm-order-0"><a href="#"><button id="retro-button" class="btn btn-primary">Continuar com o Frete</button></a></li>
+                </ul>
+            </div>
+        </div>
+<!-- menu secundario -->
+        <div id="mini-footer">
+            <div id="links">
+                <div id="linhabottom"></div>
+                <ul id="links-miniFooter">
+                    <li><a href="#">Pagina de Reembolso</a></li>
+                    <li><a href="#">Pagina de Frete</a></li>
+                    <li><a href="#">Politica de Privacidade</a></li>
+                    <li><a href="#">Termos de Serviços</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Lado de 4 columnas -->
+<div id="container-4" class="col-xl-5 col-lg-5 col-md-5 col-sm-5">
+    
+<div class="container"> 
+    <div id="compras" class="row"></div>
+    
+    <br>
+    <div id="linha"></div>
+    <br>
+    <div id="subtotal" class="row">
+            <div id="st-texto" class="col-8">
+            <p>SUBTOTAL</p>
+            </div>
+            <div id="st-valor" class="col-4">
+           <p>R$ 125</p> 
+        </div>
+    </div>
+    <div id="frete" class="row">
+        <div id="fr-texto" class="col-4">
+        <p>FRETE</p>
+        </div>
+        <div id="fr-valor" class="col-8">
+       <p>Se calcula na proxima etapa</p> 
+    </div>
+</div>
+    <br>
+    <div id="linha"></div>
+    <br>
+    
+    <div id="total" class="row">
+        <div id="tt-texto" class="col-8">
+            <p>TOTAL</p>
+        </div>
+        <div id="tt-valor" class="col-4">
+            <p>
+                R$. 125
+            </p>
+        </div>
+    </div>
+    
+    <br>
+    <div id="linha"></div>
+    </div>
+</div>
+</div>   
+<footer></footer>
+<!-- Script de bootstrapt -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+ <script src="./js/carrinhoVazio.js"></script>
+</body>
+</html>

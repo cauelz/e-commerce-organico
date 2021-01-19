@@ -1,0 +1,206 @@
+body {
+    background-color: rgb(130, 195, 130);
+    }
+    
+    
+    /*Lado izquerdo*/
+#container-7 img {
+    margin-left: 32px;
+    margin-top: 3rem;
+    width: 500px;
+    height: 50px;
+    }
+    
+#submenu-adiantamento #links ul {
+        margin-left: 5rem;
+        padding: 20px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+#links li {
+        padding: 5px;  
+        margin: 2.5px;
+    }
+#formulario-checkout {
+        margin-left: 35px;
+        margin-right: 70px;
+    }
+#formulario-checkout h4 {
+        margin: 10px 5px 5px 2px;
+        
+    }
+#endereco input {
+        width: 500px;
+        margin: 10px 0px 5px 0px;
+    }
+#Avanzo  ul {
+        margin-left: 30px;
+        padding: 20px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+#Avanzo-1 {
+        margin-top: 20px;    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+#linhabottom {
+        border-top: 1px solid thistle; 
+        margin-left: 30px; 
+        margin-right: 20px;
+    
+    }
+    
+#links-miniFooter {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: 15px;
+        margin-right: 15px;
+        justify-content: space-between;
+        }
+
+#container-4 {
+        background-color: rgb(216, 231, 220);
+        } 
+
+#compras {
+    padding-top: 75px;
+    height: auto;
+    
+}
+
+tr {
+    display: flex;
+    flex-direction: row;
+}
+
+td {
+    width: 170px;
+    height: auto;
+    margin: 10px;
+}
+
+#compras img {
+    width: 75px;
+    height: auto;
+    margin-left: 1rem;
+    border-radius: 15px;
+}
+
+#subtotal, #total, #frete {
+    display: flex;
+    flex-wrap: nowrap;
+}
+#subtotal #st-texto {
+    margin-left: 1rem;
+    }
+
+#frete #fr-texto {
+        margin-left: 1rem;
+    }
+
+#subtotal #st-valor {
+    padding-left: 0rem;
+}
+
+#total #tt-valor {
+    padding-left: 0rem;
+}
+
+#frete #fr-valor {
+    text-align: center;
+}
+
+#total #tt-texto {
+    margin-left: 1rem;
+    
+}
+
+#linha {
+    border-top: 1px solid rgb(129, 134, 60);
+    width: 450px;
+    margin-left: 2rem;  
+}
+
+@media only screen and (max-width: 568px) {
+
+#logo-pgto img {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: 0px;
+    max-width: 300px;
+    height: auto; 
+}
+
+#submenu-adiantamento #links ul{
+    margin: 0rem;
+    width: auto;
+    font-size: 12px;
+}
+
+#formulario-checkout h4 {
+    width: 300px;
+    margin-bottom: .5rem;
+}
+
+#formulario-checkout #dados-de-contato{
+    width: 300px;
+}
+
+#formulario-checkout label {
+    width: 300px;
+    font-size: 12px;
+}
+
+
+#nome, #sobrenome, #pais, #estado, #cep {
+    margin-bottom: .5rem;
+    width: 300px;
+}
+
+#endereco input {
+    margin-bottom: 0.5rem;
+    width: 300px;
+}
+
+#Avanzo-1 li {
+   margin-bottom: 1rem;
+   }
+
+#Avanzo-1 h6 {
+    padding-left: 1.5rem;
+}
+
+#Avanzo ul {
+    flex-direction: column-reverse;
+    margin-bottom: 1rem;
+}
+
+#links-miniFooter {
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
+}
+
+#links-miniFooter li {
+    padding: 0px;
+    margin-left: .5rem;
+    font-size: 10px;
+    width: 50px;
+    justify-content: space-between;
+   
+
+}
+    
+}
+
+
+    
+    

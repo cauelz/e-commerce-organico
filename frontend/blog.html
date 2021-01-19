@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/frontend/assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+        integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+    <title>Blog Orgâni.co</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light nav-background-white">
+            <button class="navbar-toggler main-color" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand nav-brand-title">orgâni.co</a>
+
+            <div class="collapse navbar-collapse mx-3" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quem Somo</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Produtos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Frutas</a>
+                            <a class="dropdown-item" href="#">Verduras</a>
+                            <a class="dropdown-item" href="#">Legumes</a>
+                            <a class="dropdown-item" href="#">Carnes</a>
+                            <a class="dropdown-item" href="#">Temperos e Chás</a>
+                            <a class="dropdown-item" href="#">Laticínios</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/frontend/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dúvidas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 pr-4">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i
+                            class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div class="d-flex">
+                <div class="mx-2 text-center">
+                    <a href="" class="btn btn-outline-light btn-lg" role="button" aria-pressed="true" data-toggle="modal" data-target="#exampleModal" ><i
+                            class="far fa-comments nav-fontawesome-icon"></i></a>
+                    <span class="d-block">Atendimento</span>
+                </div>
+                <div class="mx-2 text-center">
+                    <a href="" class="btn btn-outline-light btn-lg" role="button" aria-pressed="true"><i class="fas fa-shopping-cart nav-fontawesome-icon pr-2"></i></a>
+                    <span class="d-block">Carrinho</span>
+                </div>
+                <div class="mx-2 text-center">
+                    <a href="" class="btn btn-outline-light btn-lg" role="button" aria-pressed="true" data-toggle="modal" data-target="#exampleModal" ><i
+                            class="fas fa-user nav-fontawesome-icon"></i></a>
+                    <span class="d-block">Minha Conta</span>
+                </div>
+            </div>
+        </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Faça seu Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="login-email">E-mail</label>
+                            <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="login-senha">Password</label>
+                            <input type="password" class="form-control" id="login-senha">
+                        </div>
+                        <a role="button" class="btn btn-link">Esqueci minha senha!</a>
+                        <a href="./formulario.html" role="button" class="btn btn-link">Cadastre-se</a>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn-outline-danger" tabindex="-1" role="button" aria-disabled="true">Sair</a>
+                        <a href="./user.html" class="btn btn-outline-success" tabindex="-1" role="button" aria-disabled="true">Entrar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section> <!-- Em alguma aula o professor falor sobre os 3 pontinhos para o quadro ficar do mesmo tamanho -->
+        <div class="banner">
+            <img src="./assets/images/blog-organico-1.png" class="img-fluid" alt="Banner Blog ôrganico">
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 mx-0" id="posts">
+            <div class="col mb-4">
+              <div class="card">
+                <img src="https://images.squarespace-cdn.com/content/v1/5b625f0d96d455ef934bf48c/1561745268571-Y5NCFEK8RDPMDQT7VLEC/ke17ZwdGBToddI8pDm48kKJv-aO3J5juaDXx2EYMqp1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyw47c-nJBBHNZ4h7h4Tq8iVZGn8qfHCFTN-PhSu7i9yVpKEAzGHcwgiLiG1ignBos/001.jpg?format=750w" class="card-img-top" alt="Comida orgânica tem sabor?">
+                <div class="card-body">
+                  <h5 class="card-title">Comida orgânica tem sabor?</h5>
+                  <p class="card-text">Se esse boato te espanta toda vez que  você faz compras no mercado, não tema: estamos aqui para solucionar esse  mistério! Continue lendo e  descubra, de uma vez por todas, que a comida orgânica tem sabor! </p>
+                  <a href="https://www.lemanjue.com/blog/2019/6/28/comida-orgnica-tem-sabor" class="btn btn-primary" target="blank">Ler mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="https://images.squarespace-cdn.com/content/v1/5b625f0d96d455ef934bf48c/1561778061718-APOEPQ4K0W1CZ1UIEXMG/ke17ZwdGBToddI8pDm48kKJv-aO3J5juaDXx2EYMqp1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyw47c-nJBBHNZ4h7h4Tq8iVZGn8qfHCFTN-PhSu7i9yVpKEAzGHcwgiLiG1ignBos/5.jpg" class="card-img-top" alt="Conheça 6 benefícios da comida orgânica">
+                <div class="card-body">
+                  <h5 class="card-title">Conheça 6 benefícios da comida orgânica</h5>
+                  <p class="card-text">As técnicas utilizadas na produção de grãos, vegetais, carnes, leite e até mesmo ovos orgânicos têm o objetivo de manter sua qualidade e respeitar o planeta. É por isso que esse tipo de alimento é uma tendência cada vez mais forte no mundo todo.</p>
+                  <a href="https://blog.livup.com.br/conheca-6-beneficios-da-comida-organica/" class="btn btn-primary" target="blank">Ler mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="https://s2.glbimg.com/omC_tgxbwwf4cZsygPX_Unvu14M=/620x550/bottom/e.glbimg.com/og/ed/f/original/2020/05/13/5z7a5293.jpg" class="card-img-top" alt="9 receitas com ingredientes sustentáveis">
+                <div class="card-body">
+                  <h5 class="card-title">9 receitas com ingredientes sustentáveis</h5>
+                  <p class="card-text">Além de serem sustentáveis e ajudarem a preservar o meio ambiente, os alimentos orgânicos são mais saudáveis e saborosos. Listamos 9 pratos para quem quer degustar o sabor natural dos ingredientes.</p>
+                  <a href="https://revistacasaejardim.globo.com/Casa-e-Comida/Receitas/noticia/2020/05/comida-organica-9-receitas-com-ingredientes-cultivados-de-maneira-sustentavel.html" class="btn btn-primary" target="blank">Ler mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card">
+                <img src="https://www.tuacasa.com.br/wp-content/uploads/2018/02/horta-em-apartamento-1.jpg" class="card-img-top" alt="Horta em apartamento: como fazer, o que plantar">
+                <div class="card-body">
+                  <h5 class="card-title">Horta em apartamento: como fazer, o que plantar</h5>
+                  <p class="card-text">Para quem mora em apartamento, espaço não é problema para cultivar uma horta. As plantas cabem em qualquer cantinho e são perfeitas para quem gosta de ter temperos e hortaliças fresquinhas sempre à mão. Além disso, levar um pouco de verde para casa traz mais vida e frescor para o ambiente.</p>
+                  <a href="https://www.tuacasa.com.br/horta-em-apartamento/" class="btn btn-primary" target="blank">Ler mais</a>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+                <div class="card">
+                  <img src="https://images.squarespace-cdn.com/content/v1/5b625f0d96d455ef934bf48c/1585697901861-T5B3XSXGUQQE30J5ZGIZ/ke17ZwdGBToddI8pDm48kLFCtkH88ggPObIDqRxlSC1Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpz_IQXlBhXnuPAnp1iWUDr5qjYhEFFuVbdh-DKTfXOKGEhGnZu5vdvjLeaQKVetcd8/ervas_.jpg?format=750w" class="card-img-top" alt="Alimentos essenciais para fortalecer imunidade">
+                  <div class="card-body">
+                    <h5 class="card-title">Alimentos essenciais para fortalecer imunidade</h5>
+                    <p class="card-text">Estamos em um momento em que um dos principais temas que devemos nos preocupar é a nossa imunidade. Além do mais, por orientação do Ministério da Saúde, no período de disseminação do coronavírus (COVID-19) devemos ficar em casa para nos proteger e evitar a proliferação do vírus.</p>
+                    <a href="https://www.lemanjue.com/blog/alimentos-fortalecer-imunidade" class="btn btn-primary" target="blank">Ler mais</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col mb-4">
+                <div class="card">
+                  <img src="https://images.squarespace-cdn.com/content/v1/5b625f0d96d455ef934bf48c/1587473097411-HPSMNO1FLQJR69OZNP7U/ke17ZwdGBToddI8pDm48kB8phy-EIcf08up-SlcPMdtZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZamWLI2zvYWH8K3-s_4yszcp2ryTI0HqTOaaUohrI8PIhvxinWu13u1QWbXxzb1o9HrFfo528rrFkZNAWhzH2V8/boaforma.png?format=1000w" class="card-img-top" alt="Como manter a boa forma durante a quarentena?">
+                  <div class="card-body">
+                    <h5 class="card-title">Como manter a boa forma durante a quarentena?</h5>
+                    <p class="card-text">É importante ressaltar que estresse e ansiedade aumentam o cortisol e consequentemente a inflamação, que está diretamente relacionada ao ganho de peso corporal, além de outros problemas consequentes a isso. Portanto, uma boa estratégia de manter nossa forma sem perder a saúde é modular estresse e ansiedade.</p>
+                    <a href="https://www.lemanjue.com/blog/boa-forma-na-quarentena" class="btn btn-primary" target="blank">Ler mais</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+          </div>
+    </section>
+
+
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4 background-main-color">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>Here you can use rows and columns to organize your footer content.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Institucional</a>
+                        </li>
+                        <li>
+                            <a href="#!">Atendimento</a>
+                        </li>
+                        <li>
+                            <a href="#!">Dúvidas Frequentes</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Institucional</a>
+                        </li>
+                        <li>
+                            <a href="#!">Atendimento</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">Todos os Direitos Reservados Orgâni.co &copy; 2020</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!--BootstrapCDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

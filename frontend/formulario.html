@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/frontend/assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"
+        integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+    <title>organi.co</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light nav-background-white">
+            <button class="navbar-toggler main-color" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="#" class="navbar-brand nav-brand-title">orgâni.co</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 pr-4">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i
+                            class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div>
+                <a href="" class="pr-3 nav-clear-link"><i class="fas fa-cart-plus nav-fontawesome-icon pr-2"></i></a>
+
+                <button type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-link"><i
+                        class="fas fa-user nav-fontawesome-icon"></i></button>
+            </div>
+        </nav>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Faça seu Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="login-email">E-mail</label>
+                            <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="login-senha">Password</label>
+                            <input type="password" class="form-control" id="login-senha">
+                        </div>
+                        <a role="button" class="btn btn-link">Esqueci minha senha!</a>
+                        <a href="./paginas/formulario.html" role="button" class="btn btn-link">Cadastre-se</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+                        <button type="button" class="btn btn-outline-success">Entrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <!--formulario de cadastro-->
+        <form class="container">
+            <h3 class="mb-5">Cadastre-se</h3>
+            <!--Dados Pessoais-->
+            <h5>Dados Pessoais</h5>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="nome">Nome</label>
+                    <input id="nome" type="text" class="form-control" placeholder="Lucas">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="nome-meio">Nomes do meio</label>
+                    <input id="nome-meio" type="text" class="form-control" placeholder="da Silva">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input id="sobrenome" type="text" class="form-control" placeholder="Santos">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="telefone">Telefone residencial</label>
+                    <input id="telefone" type="text" class="form-control" placeholder="(DDD) 1234-1234">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="telefone">Celular</label>
+                    <input id="telefone" type="text" class="form-control" placeholder="(DDD) 1234-1234">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="email">Email *</label>
+                    <input id="email" type="email" class="form-control" placeholder="pauloneto@pauloneto.com.br">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="email-secundario">Email secundário (opcional)</label>
+                    <input id="email-secundario" type="email" class="form-control"
+                        placeholder="pauloneto2@pauloneto2.com.br">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="senha">Senha *</label>
+                    <input id="senha" type="password" class="form-control">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="confirmacao-senha">Confirmação de senha *</label>
+                    <input id="confirmacao-senha" type="password" class="form-control">
+                </div>
+            </div>
+
+            <!--Endereço-->
+            <h5 class="mt-5">Endereço</h5>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" class="form-control" id="logradouro"
+                        placeholder="Avenida ibirapuera 284, apto 230 bloco B">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="numero-residencia">Numero</label>
+                    <input type="text" class="form-control" id="numero-residencia" placeholder="285">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" class="form-control" id="bairro" placeholder="Vila Mariana">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="complemento">Complemento</label>
+                    <input type="text" class="form-control" id="complemento" placeholder="Apto 161">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-5">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" placeholder="São Paulo">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="estado">Estado</label>
+                    <select id="estado" class="form-control">
+                        <option selected>Escolha...</option>
+                        <option>SP</option>
+                        <option>RJ</option>
+                        <option>RS</option>
+                        <option>RN</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="cep">Cep</label>
+                    <input type="text" class="form-control" id="cep" placeholder="04099-022">
+                </div>
+            </div>
+
+            <!--Informações de Pagamento-->
+            <h5 class="mt-5">Informações de Pagamento</h5>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="nome-cartao">Nome impresso no cartão *</label>
+                    <input type="text" class="form-control" id="nome-cartao" placeholder="Lucas da Silva Santos">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cpf">CPF *</label>
+                    <input type="text" class="form-control" id="cpf" placeholder="123.122.123-05">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="numero-cartao">Numero do cartão *</label>
+                    <input type="text" class="form-control" id="numero-cartao">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="data-validade-cartap">Data de validade do cartão *</label>
+                    <input type="date" class="form-control" id="data-validade-cartap">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    <label for="cvv">CVV *</label>
+                    <input type="password" class="form-control" id="cvv">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-10">
+                  <button type="submit" class="btn text-btn-color">Cadastrar</button>
+                </div>
+            </div>
+        </form>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small pt-4 background-main-color">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>Here you can use rows and columns to organize your footer content.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Institucional</a>
+                        </li>
+                        <li>
+                            <a href="#!">Atendimento</a>
+                        </li>
+                        <li>
+                            <a href="#!">Dúvidas Frequentes</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Institucional</a>
+                        </li>
+                        <li>
+                            <a href="#!">Atendimento</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">Todos os Direitos Reservados Orgâni.co &copy; 2020</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!--BootstrapCDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

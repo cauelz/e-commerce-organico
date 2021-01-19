@@ -1,0 +1,59 @@
+:root {
+    --main-color: #82845d;
+    --main-color2: #b5b47b;
+    --main-bg-color: #ffffff;   
+    --btn-color: #ff6c00;
+    --lightgrey-color: #cccccc;
+    --lightgrey2-color: #e1e1e1;
+    --lightgrey3-color: #f2f3ee;
+    --dark-color: #000000;
+}
+
+.h-300 {
+    height: 300px;
+}
+
+
+
+.carousel-indicators {
+    bottom: -40px;
+}
+
+.carousel-indicators > li {
+    background-color: #000000;
+}
+
+.text-btn-color {
+    color: var(--lightgrey3-color);
+    background-color: var(--btn-color);
+}
+
+.background-main-color {
+    background: var(--main-color);
+}
+
+.nav-brand-title {
+    font-size: 1.8rem;
+}
+
+.nav-background-white {
+    background-color: var(--main-bg-color);
+}
+
+.text-color-white {
+    color: var(--main-bg-color);
+}
+
+.nav-fontawesome-icon {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    
+}
+.nav-clear-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.main-color {
+    background-color: var(--main-color);
+}

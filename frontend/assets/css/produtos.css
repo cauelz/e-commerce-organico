@@ -1,0 +1,52 @@
+:root {
+    --main-color: #82845d;
+    --main-color2: #b5b47b;
+    --main-bg-color: #ffffff;   
+    --btn-color: #ff6c00;
+    --btn-blog-color: #f74a54;
+    --lightgrey-color: #cccccc;
+    --lightgrey2-color: #e1e1e1;
+    --lightgrey3-color: #f2f3ee;
+    --dark-color: #000000;
+}
+
+.breadcrumb {
+    background-color: #ffffff00;
+    padding: 20px 0px 0px 100px;
+    font-size: small;
+}
+
+a {
+    color: var(--main-color);
+}
+
+[href="#"]:hover {
+    color: #000000;
+}
+
+.detalhe-produto {
+    align-content: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+#sku {
+    font-size: x-small;
+}
+
+#foto-produto {
+    max-width: 400px;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.botoes {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.descricao {
+    padding-left: 100px;
+    padding-right: 100px;
+}
