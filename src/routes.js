@@ -16,6 +16,7 @@ import ProdutosPage from './pages/ProdutosPage';
 import CarrinhoPage from './pages/CarrinhoPage/CarrinhoPage';
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import ProfilePage from "./pages/ProfilePage";
 
 
 const Routes = () => {
@@ -30,6 +31,7 @@ const Routes = () => {
         <Route exact path="/carrinho/:id" component={CarrinhoPage} />
         <Route exact path="/login" component={LoginPage} />
         <Route exact path="/register" component={RegisterPage} />
+        <Route exact path="/profile" component={ProfilePage} />
         <Route exact path="/user/cadastro" component={CadastroPage} />
         <Route exact path="/user/cartao" component={AddCreditCard} />
         <Route exact path="/user/pedidos" component={PedidoPage} />
