@@ -14,7 +14,6 @@ const PlaceOrderPage = () => {
   const addDecimals = (num) => {
     return (Math.round(num * 100) / 100).toFixed(2)
   }
-
   cart.itemsPrice = addDecimals(
     cart.cartItems.reduce((acc, item) => acc + item.price * item.qty, 0)
   )
@@ -47,7 +46,7 @@ const PlaceOrderPage = () => {
               </ListGroup.Item>
               <ListGroup.Item>
                 <h2>Forma de Pagamento:</h2>
-                <strong>Method: </strong>
+                <strong>Metodo: </strong>
                 {cart.paymentMethod}
               </ListGroup.Item>
               <ListGroup.Item>
@@ -112,9 +111,6 @@ const PlaceOrderPage = () => {
                     <Col>Total</Col>
                     <Col>R${cart.totalPrice}</Col>
                   </Row>
-                </ListGroup.Item>
-                <ListGroup.Item>
-
                 </ListGroup.Item>
                 <ListGroup.Item>
                   <Button
