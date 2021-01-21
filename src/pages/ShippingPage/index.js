@@ -27,7 +27,7 @@ const ShippingPage = ({ history }) => {
       city,
       state,
       postalCode,
-      country
+      country,
     }))
     history.push('/payment');
   }
