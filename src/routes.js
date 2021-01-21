@@ -19,6 +19,7 @@ import RegisterPage from "./pages/RegisterPage";
 import ProfilePage from "./pages/ProfilePage";
 import ShippingPage from "./pages/ShippingPage";
 import PaymentPage from "./pages/PaymentPage";
+import PlaceOrderPage from "./pages/PlaceOrderPage";
 
 
 const Routes = () => {
@@ -26,24 +27,27 @@ const Routes = () => {
     <BrowserRouter>
       <Header></Header>
       <CarouselDefault></CarouselDefault>
-      <Switch>
-        <Route exact path="/blog" component={BlogPage} />
-        <Route exact path="/produtos" component={ProdutosPage} />
-        <Route exact path="/produtos/:id" component={DetProduto} />
-        <Route exact path="/carrinho/:id?" component={CarrinhoPage} />
-        <Route exact path="/shipping" component={ShippingPage} />
-        <Route exact path="/payment" component={PaymentPage} />
-        <Route exact path="/login" component={LoginPage} />
-        <Route exact path="/register" component={RegisterPage} />
-        <Route exact path="/profile" component={ProfilePage} />
-        <Route exact path="/user/cadastro" component={CadastroPage} />
-        <Route exact path="/user/cartao" component={AddCreditCard} />
-        <Route exact path="/user/pedidos" component={PedidoPage} />
-        <Route exact path="/user/atendimento" component={AtendimentoPage} />
-        <Route exact path="/user/notificacoes" component={NotificacoesPage} />
-        <Route exact path="/user" component={UserPage} />
-        <Route path="/" component={HomePage} />
-      </Switch>
+      <main className='px-3 m-3'>
+        <Switch>
+          <Route exact path="/blog" component={BlogPage} />
+          <Route exact path="/produtos" component={ProdutosPage} />
+          <Route exact path="/produtos/:id" component={DetProduto} />
+          <Route exact path="/carrinho/:id?" component={CarrinhoPage} />
+          <Route exact path="/shipping" component={ShippingPage} />
+          <Route exact path="/payment" component={PaymentPage} />
+          <Route exact path="/placeorder" component={PlaceOrderPage} />
+          <Route exact path="/login" component={LoginPage} />
+          <Route exact path="/register" component={RegisterPage} />
+          <Route exact path="/profile" component={ProfilePage} />
+          <Route exact path="/user/cadastro" component={CadastroPage} />
+          <Route exact path="/user/cartao" component={AddCreditCard} />
+          <Route exact path="/user/pedidos" component={PedidoPage} />
+          <Route exact path="/user/atendimento" component={AtendimentoPage} />
+          <Route exact path="/user/notificacoes" component={NotificacoesPage} />
+          <Route exact path="/user" component={UserPage} />
+          <Route path="/" component={HomePage} />
+        </Switch>
+      </main>
       <Footer></Footer>
     </BrowserRouter>
   );
