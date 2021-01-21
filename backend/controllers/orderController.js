@@ -18,7 +18,7 @@ const addOrderItems = asyncHandler(async (req, resp) => {
 
   if (orderItems && orderItems === 0) {
     resp.status(400);
-    throw new Error('No order Items');
+    throw new Error('Sem itens no pedido');
   } else {
     const order = new Order({
       orderItems,
@@ -36,4 +36,20 @@ const addOrderItems = asyncHandler(async (req, resp) => {
   }
 })
 
-module.exports = { addOrderItems }
+//@desc    GET order by ID
+//@route   GET /api/orders/:id
+//@access  Private
+
+const getOrderById = asyncHandler(async (req, resp) => {
+
+  const order = await Order.findById(req.params.id).populate('user', 'name email');
+
+  if (order) {
+    resp.json(order)
+  } else {
+    resp.status(404);
+    throw new Error('Pedido não encontrado')
+  }
+})
+
+module.exports = { addOrderItems, getOrderById }
