@@ -12,6 +12,12 @@ const PlaceOrderPage = ({ history }) => {
 
   const cart = useSelector((state) => state.cart);
 
+  if (!cart.shippingAddress.address) {
+    history.push('/shipping')
+  } else if (!cart.paymentMethod) {
+    history.push('/payment')
+  }
+
   // calculo de valores
 
   const addDecimals = (num) => {
@@ -39,15 +45,17 @@ const PlaceOrderPage = ({ history }) => {
   }, [history, success])
 
   const placeOrderHandler = () => {
-    dispatch(createOrder({
-      orderItems: cart.cartItems,
-      shippingAddress: cart.shippingAddress,
-      paymentMethod: cart.paymentMethod,
-      itemsPrice: cart.itemsPrice,
-      shippingPrice: cart.shippingPrice,
-      taxPrice: cart.taxPrice,
-      totalPrice: cart.totalPrice
-    }))
+    dispatch(
+      createOrder({
+        orderItems: cart.cartItems,
+        shippingAddress: cart.shippingAddress,
+        paymentMethod: cart.paymentMethod,
+        itemsPrice: cart.itemsPrice,
+        shippingPrice: cart.shippingPrice,
+        taxPrice: cart.taxPrice,
+        totalPrice: cart.totalPrice,
+      })
+    )
   }
 
   return (
@@ -92,7 +100,7 @@ const PlaceOrderPage = ({ history }) => {
                               </Link>
                             </Col>
                             <Col md={4}>
-                              {item.qty} x R${item.price} = R${item.qty * item.price}
+                              {item.qty} x R${item.price} = R${(item.qty * item.price).toFixed(2)}
                             </Col>
                           </Row>
                         </ListGroup.Item>
@@ -143,7 +151,7 @@ const PlaceOrderPage = ({ history }) => {
                     disabled={cart.cartItems === 0}
                     onClick={placeOrderHandler}
                   >
-                    Confirmar Pedido
+                    Fazer Pedido
                 </Button>
                 </ListGroup.Item>
               </ListGroup>
