@@ -19,7 +19,8 @@ import ProfilePage from "./pages/ProfilePage";
 import ShippingPage from "./pages/ShippingPage";
 import PaymentPage from "./pages/PaymentPage";
 import PlaceOrderPage from "./pages/PlaceOrderPage";
-import OrderPage from './pages/OrderPage'
+import OrderPage from './pages/OrderPage';
+import InstitucionalPage from './pages/Institucional'
 
 
 const Routes = () => {
@@ -30,6 +31,7 @@ const Routes = () => {
       <main className='px-3 m-3'>
         <Switch>
           <Route exact path="/blog" component={BlogPage} />
+          <Route exact path="/institucional" component={InstitucionalPage} />
           <Route exact path="/produtos" component={ProdutosPage} />
           <Route exact path="/produtos/:id" component={DetProduto} />
           <Route exact path="/carrinho/:id?" component={CarrinhoPage} />
