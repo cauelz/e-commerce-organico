@@ -20,7 +20,8 @@ import ShippingPage from "./pages/ShippingPage";
 import PaymentPage from "./pages/PaymentPage";
 import PlaceOrderPage from "./pages/PlaceOrderPage";
 import OrderPage from './pages/OrderPage';
-import InstitucionalPage from './pages/Institucional'
+import InstitucionalPage from './pages/Institucional';
+import FaqPage from './pages/FaqPage'
 
 
 const Routes = () => {
@@ -32,6 +33,7 @@ const Routes = () => {
         <Switch>
           <Route exact path="/blog" component={BlogPage} />
           <Route exact path="/institucional" component={InstitucionalPage} />
+          <Route exact path="/faq" component={FaqPage} />
           <Route exact path="/produtos" component={ProdutosPage} />
           <Route exact path="/produtos/:id" component={DetProduto} />
           <Route exact path="/carrinho/:id?" component={CarrinhoPage} />
