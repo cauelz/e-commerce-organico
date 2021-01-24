@@ -1,0 +1,50 @@
+:root {
+    --main-color: #82845d;
+    --main-color2: #b5b47b;
+    --main-bg-color: #ffffff;   
+    --btn-color: #ff6c00;
+    --btn-blog-color: #f74a54;
+    --lightgrey-color: #cccccc;
+    --lightgrey2-color: #e1e1e1;
+    --lightgrey3-color: #f2f3ee;
+    --dark-color: #000000;
+}
+
+.titulo-institucional {
+    text-align: center;
+}
+
+.texto-institucional {
+    text-align: center;
+    background-color: var(--lightgrey3-color);
+    padding: 50px;
+}
+
+.news-institucional {
+    text-align: center;
+}
+
+.news-form {
+    background-color: var(--lightgrey3-color);
+    margin: 0px 150px;
+}
+
+.row {
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 30px 10px 20px;
+}
+
+.nome-news {
+    width: 200px;
+}
+
+.email-news {
+    width: 300px;
+}
+
+#btn-news {
+    background-color: var(--btn-color);
+    border-color: var(--btn-color);
+    width: 200px;
+}
